@@ -19,7 +19,15 @@ css: css/about.css
           <a href="mailto:coralie.joucla@gmail.com"><i class="fa fa-envelope-o"></i></a>
           <a href="https://github.com/coraliejoucla"><i class="fa fa-github"></i></a>
           <a href="https://scholar.google.com/citations?user=XXXX"><i class="fa fa-graduation-cap"></i></a>
-          <a href="https://orcid.org/your-id"><img src="https://orcid.org/sites/default/files/images/orcid_24x24.png" alt="ORCID" style="vertical-align: text-bottom; display: inline-block; width: 24px; height: 24px; margin: 0 4px; position: relative; top: 1px;"></a>
+          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg"
+       alt="ORCID"
+       style="filter: brightness(0) invert(1);
+              width: 24px;
+              height: 24px;
+              vertical-align: middle;
+              margin: 0 6px;
+              display: inline-block;"></a>
+
           <a href="https://www.linkedin.com/in/XXXX"><i class="fa fa-linkedin"></i></a>
         </p>
       </div>
