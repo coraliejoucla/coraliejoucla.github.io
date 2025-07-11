@@ -3,13 +3,13 @@
 # # # # # # # #
 
 # Basic
-name:               "Neuro group @ FEMTO-ST"
-title:              "Neuro group at the Dept of Automation and Robotics, FEMTO-ST Institute"
-description:        "Lab webpage for the Neuro group, a control systems + neurophysiology research lab at the FEMTO-ST Institute, Besançon France"
+name:               "Coralie Joucla"
+title:              "BLABLABLA CONFIG1"
+description:        "BLABLABLA CONFIG2"
 
 
 # URL
-url:                https://neuro-team-femto.github.io
+url:                https://coraliejoucla.github.io
 baseurl:            
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
