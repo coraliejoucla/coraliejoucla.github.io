@@ -8,7 +8,7 @@ css: ["/css/profile.css"]   # loads the custom styles only here
   <div class="row">
     <!-- LEFT SIDEBAR -->
     <div class="col-md-4 text-center sidebar">
-      <img src="/images/profile.jpg" alt="Coralie Joucla" class="profile-pic img-responsive">
+      <img src="/images/about/profile.jpg" alt="Coralie Joucla" class="profile-pic img-responsive">
 
       <h2>Coralie Joucla</h2>
       <h4>PhD · Cognitive & Computational Neuroscience</h4>
