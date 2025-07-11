@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-css: ["/css/profile.css"]
+css: ["/css/about.css"]
 ---
 
 <div class="about-hero">
