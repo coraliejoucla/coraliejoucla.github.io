@@ -10,7 +10,7 @@ css: css/about.css
 
       <!-- LEFT SIDEBAR -->
       <div class="col-md-4 text-center sidebar">
-        <img src="/images/profile.jpg" alt="Coralie Joucla" class="profile-pic img-responsive">
+        <img src="/images/about/profile.jpg" alt="Coralie Joucla" class="profile-pic img-responsive">
 
         <h2>Coralie Joucla</h2>
         <h4>PhD · Cognitive & Computational Neuroscience</h4>
@@ -19,7 +19,7 @@ css: css/about.css
           <a href="mailto:coralie.joucla@gmail.com"><i class="fa fa-envelope-o"></i></a>
           <a href="https://github.com/coraliejoucla"><i class="fa fa-github"></i></a>
           <a href="https://scholar.google.com/citations?user=XXXX"><i class="fa fa-graduation-cap"></i></a>
-          <a href="https://orcid.org/0000-0000-0000-0000"><i class="fa fa-id-badge"></i></a>
+          <a href="https://orcid.org/your-id"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID" style="vertical-align: middle;"></a>
           <a href="https://www.linkedin.com/in/XXXX"><i class="fa fa-linkedin"></i></a>
         </p>
       </div>
