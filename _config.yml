@@ -22,10 +22,8 @@ highlighter:        rouge
 
 # Navigation
 nav:
-  - name: Home
+  - name: Bio
     href: /
-  - name: About
-    href: /about
   - name: Research
     href: /research
   - name: Publications
