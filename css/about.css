@@ -50,3 +50,36 @@ h2, h3, h4 {
 .social a:hover {
   color: #FCDC58;
 }
+
+.about-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* On screens wider than 768px (e.g. desktop) */
+@media screen and (min-width: 768px) {
+  .about-columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-col {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .about-col:last-child {
+    padding-right: 0;
+  }
+}
+.container-fluid {
+  max-width: 100%;
+  padding: 0 5%;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
