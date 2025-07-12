@@ -39,19 +39,26 @@ css: css/about.css
 
         <hr>
 
-        <h3>Interests</h3>
-        <ul>
-          <li>Social & affective neuroscience</li>
-          <li>EEG / MEG signal processing</li>
-          <li>Machine learning for neurodata</li>
-        </ul>
+        <div class="about-columns">
+          <div class="about-col">
+            <h3>Interests</h3>
+            <ul>
+              <li>Social &amp; affective neuroscience</li>
+              <li>EEG / MEG signal processing</li>
+              <li>Machine learning for neurodata</li>
+            </ul>
+          </div>
+        
+          <div class="about-col">
+            <h3>Education</h3>
+            <ul class="edu">
+              <li><strong>PhD, Neuroscience</strong> — Université X (2020)</li>
+              <li><strong>MSc, Cognitive Science</strong> — Université Y (2016)</li>
+              <li><strong>BSc, Biology</strong> — Université Z (2014)</li>
+            </ul>
+          </div>
+        </div>
 
-        <h3>Education</h3>
-        <ul class="edu">
-          <li><strong>PhD, Neuroscience</strong> — Université X (2020)</li>
-          <li><strong>MSc, Cognitive Science</strong> — Université Y (2016)</li>
-          <li><strong>BSc, Biology</strong> — Université Z (2014)</li>
-        </ul>
       </div>
 
     </div>
