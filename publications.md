@@ -41,6 +41,26 @@ Journal of Neurophysiology, 2022 <br>
 
 <hr>
 
+### 2020
+
+[_Cortical patterns of pleasurable musical chills revealed by High-Density EEG_](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.565815/full) <br>
+Thibault Chabin, Damien Gabriel, Tanawat Chansophonkul, Lisa Michelant, *Coralie Joucla*, Emmanuel Haffen, Thierry Moulin, Alexandre Comte & Lionel Pazart<br>
+Frontiers in Neuroscience, 2020 <br>
+[<img style='display:inline;padding-top: 5px;' height='25' src='/images/site_icons/access.jpg'>]({{site.baseurl}}/articles/2020/fnins-14-565815.pdf)
+
+[_The relevance of a conductor competition for the study of emotional synchronyzation within and between groups in a natural musical setting_](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02954/full) <br>
+Thibault Chabin, Grégory Tio, Alexandre Comte, Coralie Joucla, Damien Gabriel & Lionel Pazart<br>
+Frontiers in Psychology, 2020 <br>
+[<img style='display:inline;padding-top: 5px;' height='25' src='/images/site_icons/access.jpg'>]({{site.baseurl}}/articles/2020/fpsyg-10-02954.pdf)
+
+<hr>
+
+### 2019
+
+<hr>
+
+### 2018
+
 ### Copyright Notice
 
 The documents listed here are available for downloading and have been provided as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be re-posted without the explicit permission of the copyright holder.
