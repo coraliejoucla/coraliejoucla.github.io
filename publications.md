@@ -1,38 +1,35 @@
 ---
 title: Publication
-permalink: /publications/
+layout: default
+css: css/featured_publis.css
 ---
 
 <!-- Add this section to your publications.html -->
 <section id="featured-publications" class="container-fluid">
   <h2 style="text-align: center; margin-bottom: 2rem;">Featured Publications</h2>
   <div class="featured-grid">
-  	
+    
     <!-- Card 1 -->
     <a class="featured-card" href="/publication/pitch-p300/">
-      <img src="/images/publications/6635.jpg" alt="Pitch P300 Study">
+      <img src="/images/publications/eeg.png" alt="Pitch P300 Study">
       <div class="featured-content">
-        <p class="pub-type">SOCIAL COGNITION / EEG</p>
         <h3 class="pub-title">The implicit influence of pitch contours and emotional timbre on P300 components in an own-name oddball paradigm</h3>
-        <p class="pub-summary">Subtle acoustic cues like pitch and timbre modulate self-relevant EEG responses, offering insights into emotional processing.</p>
-        <p class="pub-meta">2023 &nbsp;&nbsp; | &nbsp;&nbsp; <span class="badge">Open Access</span></p>
       </div>
     </a>
 
-    <!-- Card 2 -->
-    <a class="featured-card" href="/publication/eeg-svm/">
-      <img src="/images/publications/22688.jpg" alt="EEG SVM Paper">
+     <!-- Card 2 -->
+    <a class="featured-card" href="/publication/pitch-p300/">
+      <img src="/images/publications/eeg.png" alt="EEG SVM meta-analysis">
       <div class="featured-content">
-        <p class="pub-type">METHODOLOGY / EEG CLASSIFICATION</p>
-        <h3 class="pub-title">Three simple steps to improve the interpretability of EEG‑SVM studies</h3>
-        <p class="pub-summary">A practical pipeline to enhance clarity, transparency, and reproducibility in EEG classification research.</p>
-        <p class="pub-meta">2022 &nbsp;&nbsp; | &nbsp;&nbsp; <span class="badge">Open Access</span> <span class="badge">Open Code</span> <span class="badge">Open Data</span></p>
+        <h3 class="pub-title">Three simple steps to improve the interpretability of EEG-SVM studies</h3>
       </div>
     </a>
   </div>
 </section>
 
 
+<h2 style="text-align: center; margin-top :2rem; margin-bottom: 2rem;">List of publications</h2>
+{% capture publis_text %}
 We care about [open science](https://en.wikipedia.org/wiki/Open_science). Because our research is almost entirely publicly funded, and because all our permanent and non-permanent positions are civil servants [part of the public sector](https://en.wikipedia.org/wiki/French_National_Centre_for_Scientific_Research), we believe it is a moral commitment to make our results accessible for free at all levels of society. This includes publications (open-access) but also research material, stimuli, data, and software. 
 
 Click on the <img style='display:inline;position: relative;top: 10px' height='20' src='/images/site_icons/access.jpg'> banners below for direct access to the PDFs of the papers; <br> 
@@ -115,3 +112,8 @@ International Journal of Psychophysiology, 2018 <br>
 ### Copyright Notice
 
 The documents listed here are available for downloading and have been provided as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be re-posted without the explicit permission of the copyright holder.
+{% endcapture %}
+
+<section class="publis-text">
+  {{ publis_text | markdownify }}
+</section>

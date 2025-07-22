@@ -294,6 +294,7 @@ tbody tr:nth-child(odd) th {
   }
 }
 
+
 .masthead {
 
   &-title {
@@ -547,3 +548,23 @@ tbody tr:nth-child(odd) th {
   border: none;
   background-color: #FFF;
 }
+
+
+/*Hero stuff new*/
+.hero-wrapper {
+  position: relative;
+  height: 30vh; // change height of image
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/hero.webp'); // change to your actual path
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+

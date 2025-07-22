@@ -1,8 +1,17 @@
+.publis-text {
+  text-align: left;
+  /*padding: 3rem 1rem;*/
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .featured-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  justify-content: center;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .featured-card {
@@ -18,19 +27,22 @@
   transition: transform 0.2s ease;
 }
 
+
 .featured-card:hover {
   transform: translateY(-5px);
 }
 
 .featured-card img {
-  width: 100%;
+  width: auto;
   height: auto;
   display: block;
+  margin: auto;
 }
 
 .featured-content {
   padding: 1rem 1.5rem;
 }
+
 
 .pub-type {
   font-size: 0.75rem;
@@ -40,8 +52,8 @@
 }
 
 .pub-title {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1rem;
+  /*font-weight: bold;*/
   margin: 0.5rem 0;
 }
 

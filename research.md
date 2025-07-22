@@ -4,10 +4,8 @@ layout: default
 css: css/research.css
 ---
 
+<h2 style="text-align: center; margin-bottom: 2rem;">Research Themes</h2>
 <section class="research-intro">
-  <h2>Research Themes</h2>
-  <p>A showcase of my academic work in EEG signal processing, cognition and emotion.</p>
-
   <div class="research-grid">
     <a href="#theme1" class="research-card">
       <img src="/images/icons/brainwave.svg" alt="Icon 1" />
@@ -40,6 +38,12 @@ css: css/research.css
       <p>Clinical innovation</p>
     </a>
   </div>
+
+  <p style="margin-top: 2rem;">My research lies at the intersection of neuroscience, signal processing, and clinical care. I study how brain activity reflects perception, emotion, and cognition— especially in people whose minds are harder to access: patients with depression, disorders of consciousness, or autism.</p>
+  <p>What drives me is curiosity. I see each study as both a scientific challenge and a creative journey—designing new paradigms, building tools, and trying to consider issues from a different perspective.</p>
+  <p>My analyses combine rigorous EEG signal processing with advanced computational tools such as machine learning, genetic algorithms, and reverse correlation. I enjoy the collaborative puzzle-solving that happens at the interface between neuroscience, computer science, and mathematics.</p>
+  <p>But research isn’t just data. During EEG experiments, whether with healthy volunteers or hospitalized patients, I see research as a space for meaningful encounters. Preparing high-resolution EEGs often takes time, and I value the conversations and human diversity this allows. Clinical settings, on the other hand, offer a rare window into medical practice: how clinicians think, how care is delivered, and what gaps science can help bridge. These moments are sometimes hard, but always meaningful. They remind me why science must stay human.</p>
+  <p>I also believe neuroscience shouldn't exist in a vacuum. I often expand my interpretative framework by drawing insights from psychology, psychiatry, anthropology, and even ethnology. I believe that to understand what makes people feel, suffer, or heal, we must consider their socio-cultural ecosystem. This cross-disciplinary mindset fuels my commitment to collaborative science and epistemological openness.</p>
 </section>
 
 <!-- Detailed Sections -->

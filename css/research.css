@@ -1,7 +1,10 @@
 .research-intro {
-  text-align: center;
+  text-align: left;
   /*padding: 3rem 1rem;*/
+  max-width: 800px;
+  margin: 0 auto;
 }
+
 .research-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
