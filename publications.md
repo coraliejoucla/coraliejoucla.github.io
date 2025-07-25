@@ -11,7 +11,7 @@ css: css/featured_publis.css
     
     <!-- Card 1 -->
     <a class="featured-card" href="/publication/pitch-p300/">
-      <img src="/images/publications/eeg.png" alt="Pitch P300 Study">
+      <img src="/images/publications/pitch_contour.PNG" alt="Pitch P300 Study">
       <div class="featured-content">
         <h3 class="pub-title">The implicit influence of pitch contours and emotional timbre on P300 components in an own-name oddball paradigm</h3>
       </div>
@@ -19,7 +19,7 @@ css: css/featured_publis.css
 
      <!-- Card 2 -->
     <a class="featured-card" href="/publication/pitch-p300/">
-      <img src="/images/publications/eeg.png" alt="EEG SVM meta-analysis">
+      <img src="/images/publications/svm_review.PNG" alt="EEG SVM meta-analysis">
       <div class="featured-content">
         <h3 class="pub-title">Three simple steps to improve the interpretability of EEG-SVM studies</h3>
       </div>

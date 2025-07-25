@@ -8,34 +8,28 @@ css: css/research.css
 <section class="research-intro">
   <div class="research-grid">
     <a href="#theme1" class="research-card">
-      <img src="/images/icons/brainwave.svg" alt="Icon 1" />
+      <img src="/images/site_icons/eeg.png" alt="Icon 1" />
       <h3>EEG Signal Analysis</h3>
-      <p>Neural signals</p>
     </a>
     <a href="#theme2" class="research-card">
-      <img src="/images/icons/music.svg" alt="Icon 2" />
+      <img src="/images/site_icons/music.png" alt="Icon 2" />
       <h3>Music, Memory & Emotion</h3>
-      <p>Brain processing</p>
     </a>
     <a href="#theme3" class="research-card">
-      <img src="/images/icons/ml.svg" alt="Icon 3" />
+      <img src="/images/site_icons/machine_learning.PNG" alt="Icon 3" />
       <h3>Machine Learning for EEG</h3>
-      <p>Data classification</p>
     </a>
     <a href="#theme4" class="research-card">
-      <img src="/images/icons/brain-heart.svg" alt="Icon 4" />
+      <img src="/images/site_icons/brain_consciousness.png" alt="Icon 4" />
       <h3>Consciousness & Prognosis</h3>
-      <p>Coma patients</p>
     </a>
     <a href="#theme5" class="research-card">
-      <img src="/images/icons/smile.svg" alt="Icon 5" />
+      <img src="/images/site_icons/autism.PNG" alt="Icon 5" />
       <h3>Vocal Smiles & Autism</h3>
-      <p>Social signals</p>
     </a>
     <a href="#theme6" class="research-card">
-      <img src="/images/icons/industry.svg" alt="Icon 6" />
+      <img src="/images/site_icons/industry.png" alt="Icon 6" />
       <h3>Science & Industry</h3>
-      <p>Clinical innovation</p>
     </a>
   </div>
 
