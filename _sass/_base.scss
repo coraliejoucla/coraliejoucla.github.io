@@ -1,0 +1,88 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-lg;
+  }
+}
+
+body {
+  color: $color-text;
+  background-color: $color-background;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $spacing-sm;
+  font-weight: 600;
+  font-family: $font-family-base;
+  line-height: 1.2;
+  color: $color-heading;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.3rem; }
+h4,
+h5,
+h6 { font-size: 1rem; }
+
+p,
+ul,
+ol,
+dl {
+  font-family: $font-family-base;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: $spacing-md;
+  border-radius: 5px;
+}
+
+code,
+pre {
+  font-family: Monaco, 'Courier New', monospace;
+}
+
+pre {
+  padding: $spacing-sm;
+  background-color: #f9f9f9;
+  overflow-x: auto;
+}
