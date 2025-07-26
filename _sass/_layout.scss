@@ -1,0 +1,33 @@
+@import 'variables';
+
+.container,
+.container-fluid,
+.content,
+.research-intro,
+.research-detail,
+.publis-text,
+.exp-section {
+  max-width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing-md;
+  padding-right: $spacing-md;
+}
+
+.research-grid,
+.featured-grid {
+  display: grid;
+  gap: $spacing-lg;
+  justify-items: center;
+}
+
+.research-grid {
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featured-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
