@@ -154,7 +154,7 @@
   margin-bottom: $spacing-lg;
 }
 
-.hero-image {
+.hero-background {
   position: absolute;
   inset: 0;
   background-image: url('/images/hero.webp');
@@ -346,6 +346,20 @@ img.zoom-img {
 
 #lightbox-overlay.show {
   display: flex;
+}
+
+// Close button in lightbox
+// positioned so image remains perfectly centered
+// horizontally and vertically
+// Note: overlay uses flexbox centering on image only
+#lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 #lightbox-image {
