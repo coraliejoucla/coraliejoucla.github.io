@@ -20,7 +20,7 @@ permalink: /photography
 
     <div class="filter-panel" id="filter-panel">
       <button class="filter-option active" data-filter="all">All</button>
-      {% assign photos = site.static_files | where_exp: "file", "file.path contains '/images/photos/'" %}
+      {% assign photos = site.static_files | where_exp: "file", "file.path contains '/images/photos/'" | sort: 'path' %}
       {% assign series_list = "" %}
       {% for photo in photos %}
         {% assign parts = photo.path | split: '/' %}

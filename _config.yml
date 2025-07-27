@@ -38,6 +38,11 @@ nav:
 sass:
   style:            :compressed
 
+# Include all photo directories so images with leading underscores
+# are processed and available to the site
+include:
+  - images/photos
+
 # Scopes
 defaults:
   -

@@ -5,13 +5,6 @@
   width: 100%;
 }
 
-.hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  max-height: 400px;
-}
 
 .profile-pic-wrapper {
   position: absolute;
@@ -161,7 +154,7 @@
   margin-bottom: $spacing-lg;
 }
 
-.hero-image {
+.hero-background {
   position: absolute;
   inset: 0;
   background-image: url('/images/hero.webp');
@@ -339,10 +332,6 @@ img.zoom-img {
 }
 
 
-.photo-gallery {
-  position: relative;
-  z-index: 1;
-}
 
 #lightbox-overlay {
   display: none;
@@ -356,6 +345,20 @@ img.zoom-img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// Close button in lightbox
+// positioned so image remains perfectly centered
+// horizontally and vertically
+// Note: overlay uses flexbox centering on image only
+#lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 #lightbox-image {
