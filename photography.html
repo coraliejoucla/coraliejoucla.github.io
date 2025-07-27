@@ -1,0 +1,118 @@
+---
+title: Photography
+layout: default
+permalink: /photography
+---
+
+<h2 class="text-center mb-2">Photography</h2>
+
+<!-- Lightbox container -->
+<div id="lightbox-overlay">
+  <span id="lightbox-close">&times;</span>
+  <img id="lightbox-image" src="" alt="fullscreen image">
+</div>
+
+<section class="photo-gallery">
+  <div class="photo-filter-container">
+    <button class="filter-toggle" id="filter-toggle" aria-label="Show filters">
+      <i class="fa fa-sliders"></i> Portfolio
+    </button>
+
+    <div class="filter-panel" id="filter-panel">
+      <button class="filter-option active" data-filter="all">All</button>
+      {% assign photos = site.static_files | where_exp: "file", "file.path contains '/images/photos/'" %}
+      {% assign series_list = "" %}
+      {% for photo in photos %}
+        {% assign parts = photo.path | split: '/' %}
+        {% assign serie = parts[3] %}
+        {% unless series_list contains serie %}
+          <button class="filter-option" data-filter="{{ serie }}">{{ serie | capitalize }}</button>
+          {% assign series_list = series_list | append: serie | append: ',' %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="grid">
+    {% for photo in photos %}
+      {% assign parts = photo.path | split: '/' %}
+      {% assign serie = parts[3] %}
+      <div class="photo" data-series="{{ serie }}">
+        <img src="{{ photo.path }}" alt="{{ photo.name }}">
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- JS de filtrage -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("filter-toggle");
+  const panel = document.getElementById("filter-panel");
+  const buttons = document.querySelectorAll(".filter-option");
+  const photos = document.querySelectorAll(".photo");
+
+  // Toggle panel
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation(); // empêche le clic de se propager
+    panel.style.display = panel.style.display === "flex" ? "none" : "flex";
+  });
+
+  // Clic sur un filtre
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const filter = btn.dataset.filter;
+
+      photos.forEach((photo) => {
+        const series = photo.dataset.series;
+        photo.style.display = (filter === "all" || series === filter) ? "inline-block" : "none";
+      });
+
+      panel.style.display = "none";
+    });
+  });
+
+  // Fermer le panel si clic en dehors
+  document.addEventListener("click", (e) => {
+    const clickedOutside = !panel.contains(e.target) && !toggle.contains(e.target);
+    if (clickedOutside) {
+      panel.style.display = "none";
+    }
+  });
+});
+</script>
+
+<script>
+  // Lightbox
+  const lightbox = document.getElementById("lightbox-overlay");
+  const lightboxImg = document.getElementById("lightbox-image");
+  const lightboxClose = document.getElementById("lightbox-close");
+
+  document.querySelectorAll(".photo img").forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("show");
+    });
+  });
+
+  lightboxClose.addEventListener("click", () => {
+    lightbox.classList.remove("show");
+    lightboxImg.src = "";
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("show");
+      lightboxImg.src = "";
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      lightbox.classList.remove("show");
+      lightboxImg.src = "";
+    }
+  });
+</script>
