@@ -243,6 +243,7 @@ img.zoom-img {
   margin: 3.5rem auto;
   padding: 0 1rem;
   position: relative;
+  z-index: 1;
 
   .grid {
     column-count: 3;
@@ -339,12 +340,12 @@ img.zoom-img {
   inset: 0;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
 }
 
 #lightbox-overlay.show {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 // Close button in lightbox
