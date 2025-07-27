@@ -26,7 +26,7 @@ permalink: /photography
       {% assign series_list = "" %}
       {% for photo in photos %}
         {% assign parts = photo.path | split: '/' %}
-        {% assign serie = parts[3] %}
+        {% assign serie = parts[parts.size-2] %}
         {% unless series_list contains serie %}
           <button class="filter-option" data-filter="{{ serie }}">{{ serie | capitalize }}</button>
           {% assign series_list = series_list | append: serie | append: ',' %}
