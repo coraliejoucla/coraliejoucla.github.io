@@ -1,0 +1,66 @@
+---
+title: Photography
+layout: default
+permalink: /photography
+---
+
+<h2 class="text-center mb-2">Photography</h2>
+<div class="container-fluid">
+  <div class="text-center mb-2">
+    <label for="series-select">Filter by series:</label>
+    <select id="series-select">
+      <option value="all">All</option>
+      {% assign series_string = "" %}
+      {% for file in site.static_files %}
+        {% if file.path contains '/images/photos/' %}
+          {% assign serie = file.path | split: '/images/photos/' | last | split: '/' | first %}
+          {% assign series_string = series_string | append: serie | append: ',' %}
+        {% endif %}
+      {% endfor %}
+      {% assign series_list = series_string | split: ',' | uniq | sort %}
+      {% for serie in series_list %}
+        {% if serie != '' %}
+        <option value="{{ serie }}">{{ serie }}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
+  </div>
+  <div id="photo-grid" class="photo-grid">
+    {% for file in site.static_files %}
+      {% if file.path contains '/images/photos/' %}
+        {% assign serie = file.path | split: '/images/photos/' | last | split: '/' | first %}
+        <img src="{{ file.path | remove: site.source }}" alt="{{ file.name }}" data-series="{{ serie }}" class="lightbox-trigger">
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div id="lightbox-overlay" class="lightbox-overlay">
+  <img id="lightbox-image" src="" alt="">
+</div>
+
+<script>
+const select = document.getElementById('series-select');
+select.addEventListener('change', function() {
+  const chosen = this.value;
+  document.querySelectorAll('#photo-grid img').forEach(img => {
+    img.style.display = (chosen === 'all' || img.dataset.series === chosen) ? 'block' : 'none';
+  });
+});
+
+// Lightbox functionality
+const overlay = document.getElementById('lightbox-overlay');
+const overlayImg = document.getElementById('lightbox-image');
+
+document.querySelectorAll('#photo-grid img').forEach(img => {
+  img.addEventListener('click', () => {
+    overlayImg.src = img.src;
+    overlay.style.display = 'flex';
+  });
+});
+
+overlay.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  overlayImg.src = '';
+});
+</script>
