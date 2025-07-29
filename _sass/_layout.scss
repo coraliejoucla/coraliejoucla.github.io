@@ -36,7 +36,14 @@
 }
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: $spacing-md;
+  column-count: 3;
+  column-gap: 0;
+}
+
+@media (max-width: $breakpoint-lg) {
+  .photo-grid { column-count: 2; }
+}
+
+@media (max-width: $breakpoint-md) {
+  .photo-grid { column-count: 1; }
 }
