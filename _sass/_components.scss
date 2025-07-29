@@ -59,6 +59,18 @@
   display: block;
 }
 
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  break-inside: avoid;
+  transition: transform 0.2s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
 .pub-title { font-size: 1rem; margin: 0.5rem 0; }
 .pub-meta { font-size: 0.8rem; color: #777; margin-top: 0.8rem; }
 
@@ -209,5 +221,24 @@ img.zoom-img {
   padding: 0;
   a.facebook { color: #3b5998; }
   a.twitter { color: #0084b4; }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox:target {
+  display: flex;
 }
 

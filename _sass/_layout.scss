@@ -34,3 +34,16 @@
 .featured-grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
+.photo-grid {
+  column-count: 3;
+  column-gap: 0;
+}
+
+@media (max-width: $breakpoint-lg) {
+  .photo-grid { column-count: 2; }
+}
+
+@media (max-width: $breakpoint-md) {
+  .photo-grid { column-count: 1; }
+}
