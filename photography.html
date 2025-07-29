@@ -44,9 +44,13 @@ permalink: /photography
 <script>
 const select = document.getElementById('series-select');
 select.addEventListener('change', function() {
+  // Close any open lightbox when switching series
+  location.hash = '_';
   const chosen = this.value;
   document.querySelectorAll('#photo-grid a').forEach(link => {
-    link.style.display = (chosen === 'all' || link.dataset.series === chosen) ? 'inline-block' : 'none';
+    if (!link.classList.contains('lightbox')) {
+      link.style.display = (chosen === 'all' || link.dataset.series === chosen) ? 'inline-block' : 'none';
+    }
   });
 });
 </script>
