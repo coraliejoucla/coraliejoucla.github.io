@@ -29,38 +29,24 @@ permalink: /photography
     {% for file in site.static_files %}
       {% if file.path contains '/images/photos/' %}
         {% assign serie = file.path | split: '/images/photos/' | last | split: '/' | first %}
-        <img src="{{ file.path | remove: site.source }}" alt="{{ file.name }}" data-series="{{ serie }}" class="lightbox-trigger">
+        {% assign id = file.path | slugify %}
+        <a href="#{{ id }}" data-series="{{ serie }}">
+          <img src="{{ file.path | remove: site.source }}" alt="{{ file.name }}">
+        </a>
+        <a href="#_" class="lightbox" id="{{ id }}">
+          <img src="{{ file.path | remove: site.source }}" alt="{{ file.name }}">
+        </a>
       {% endif %}
     {% endfor %}
   </div>
-</div>
-
-<div id="lightbox-overlay" class="lightbox-overlay">
-  <img id="lightbox-image" src="" alt="">
 </div>
 
 <script>
 const select = document.getElementById('series-select');
 select.addEventListener('change', function() {
   const chosen = this.value;
-  document.querySelectorAll('#photo-grid img').forEach(img => {
-    img.style.display = (chosen === 'all' || img.dataset.series === chosen) ? 'block' : 'none';
+  document.querySelectorAll('#photo-grid a').forEach(link => {
+    link.style.display = (chosen === 'all' || link.dataset.series === chosen) ? 'inline-block' : 'none';
   });
-});
-
-// Lightbox functionality
-const overlay = document.getElementById('lightbox-overlay');
-const overlayImg = document.getElementById('lightbox-image');
-
-document.querySelectorAll('#photo-grid img').forEach(img => {
-  img.addEventListener('click', () => {
-    overlayImg.src = img.src;
-    overlay.style.display = 'flex';
-  });
-});
-
-overlay.addEventListener('click', () => {
-  overlay.style.display = 'none';
-  overlayImg.src = '';
 });
 </script>
