@@ -37,7 +37,7 @@
 
 .photo-grid {
   column-count: 3;
-  column-gap: 0;
+  column-gap: 0.5rem; /*space bewtween columns*/
 }
 
 @media (max-width: $breakpoint-lg) {

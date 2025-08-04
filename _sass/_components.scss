@@ -5,7 +5,6 @@
   width: 100%;
 }
 
-
 .profile-pic-wrapper {
   position: absolute;
   bottom: -1.5rem;
@@ -43,9 +42,9 @@
 .featured-card {
   background: #fff;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 115, 153, 0.2); /*color change*/
   transition: transform 0.2s ease;
   text-decoration: none;
   color: inherit;
@@ -65,11 +64,14 @@
   display: block;
   break-inside: avoid;
   transition: transform 0.2s ease;
+  /*padding: 0;*/
+  margin: 0.5rem; /*space bexteen photos in a column*/
 }
 
 .photo-grid a:not(.lightbox) img:hover {
   transform: scale(1.05);
 }
+
 
 .pub-title { font-size: 1rem; margin: 0.5rem 0; }
 .pub-meta { font-size: 0.8rem; color: #777; margin-top: 0.8rem; }
@@ -84,7 +86,7 @@
 .resume-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 115, 153, 0.2); /*color change*/
   padding: 1.5rem;
   margin: 1rem 0;
   transition: box-shadow 0.3s ease;
@@ -105,7 +107,7 @@
   }
 
   &[open] {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 18px rgba(0, 115, 153, 0.2); /*color change*/
   }
 }
 
@@ -215,13 +217,14 @@ img.zoom-img {
 .zoom-overlay-transitioning {
   cursor: default;
 }
-
+/*
 .share-buttons {
   list-style: none;
   padding: 0;
   a.facebook { color: #3b5998; }
   a.twitter { color: #0084b4; }
-}
+}*/
+
 .lightbox {
   display: none;
   position: fixed;
@@ -242,4 +245,72 @@ img.zoom-img {
 
 .lightbox:target {
   display: flex;
+}
+
+
+/*outreach section*/
+.events-section {
+  padding: 2rem 0;
+}
+
+.events-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 115, 153, 0.2); /*color change*/
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .event-text {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+}
+
+/*details*/
+details {
+  summary {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    cursor: pointer;
+    font-weight: 300 !important;
+    font-style: italic;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none; /* remove default marker */
+    }
+
+    i {
+      font-size: 0.8rem !important;
+      transition: transform 0.2s ease;
+    }
+  }
+
+  &[open] summary i {
+    transform: rotate(180deg);
+  }
+
+  /*ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+  }*/
+}
+
+.details-text {
+  font-size: 0.7rem;
 }
