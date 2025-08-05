@@ -41,21 +41,96 @@ permalink: /research
 
 
 <!-- Detailed Sections -->
-<section id="theme1" class="research-theme-card">
-  <div class="title-line">
-    <img src="/images/site_icons/eeg.png" alt="EEG Icon" class="theme-icon">
-    <h4>EEG Signal Analysis</h4>
-  </div>
-  <p>
-    Reliable EEG biomarkers are crucial in neuropsychiatry but remain difficult to obtain in clinical settings. 
-    EEG signals are inherently noisy, highly variable between individuals, and sensitive to artifacts...
-  </p>
-  <p>
-    My work addresses this gap by developing robust signal processing pipelines for high-resolution EEG (up to 256 electrodes)...
-  </p>
-</section>
+  <section id="theme1" class="research-theme-card">
+    <div class="title-line">
+      <img src="/images/site_icons/eeg.png" alt="Icon 1" class="theme-icon">
+      <h4>EEG Signal Analysis</h4>
+    </div>
+    <p>Diagnostic challenges are frequent in medicine, particularly in neurology and psychiatry, where clinicians often lack physiological biomarkers to characterize certain diseases (e.g., depression, coma, neurodegenerative conditions), especially in early stages.</p>
+    <p>Electroencephalography (EEG) has become increasingly common for exploring these pathologies. Brain activity can be recorded non-invasively, and analyzing these signals allows us to map brain regions and temporal dynamics triggered by specific stimuli. However, EEG analysis remains complex due to multiple noise sources (background activity, eye movements, artifacts) and high inter-individual variability.</p>
+    <p>In conventional studies, these issues are mitigated by averaging a large number of trials across participants, allowing random activity to cancel out while relevant signals emerge. This approach is not easily transferable to clinical practice, where diagnosis often needs to be performed on a single patient, highlighting the need for more robust methods to overcome unfavorable signal-to-noise ratios.</p>
+    <p>Recent advances in machine learning and reverse-correlation methods applied to EEG offer the ability to distinguish neural events that are otherwise barely detectable using traditional analyses. These techniques open the possibility of moving from group-level statistical findings to individualized diagnostic results, potentially transforming clinical neurophysiology.</p>
+    <p>Across my research, I have pursued two main goals:
+        <ul>
+          <li>To develop novel ways of extracting meaningful information from electrophysiological data.</li>
+          <li>To improve or propose new diagnostic and prognostic protocols for neuropsychiatric disorders.</li>
+      </ul>
+    </p>
+  </section>
 
+  <section id="theme2" class="research-theme-card">
+    <div class="title-line">
+      <img src="/images/site_icons/music.png" alt="Icon 2" class="theme-icon">
+      <h4>Music, Memory & Emotion</h4>
+    </div>
+    <p>Music is a powerful emotional stimulus, and emotional valence has been shown to facilitate memory encoding—information we enjoy is stored more rapidly and durably. We sought to determine whether musical appreciation affects neuromarkers of learning in healthy participants.</p>
+    <p>Twenty volunteers listened to five unfamiliar songs over two weeks. The two most liked and two least liked tracks were then selected for testing. Using 256-channel high-resolution EEG, participants re-listened to these songs with 20 silent gaps inserted per track. Time-frequency analyses revealed specific oscillatory activity patterns (notably in theta and alpha bands) during silence periods, localized to brain regions such as the inferior frontal gyrus and superior temporal gyrus—areas known to be involved in music processing. This work provided evidence that musical preference shapes neural encoding dynamics.
+    EEG, Machine Learning, and Music (Completed, Submitted for Publication)</p>
+    <p>We next explored automatic classification of neural activity associated with imagery of familiar versus unfamiliar songs using machine learning. EEG data were recorded from 20 volunteers listening to 20 songs (familiar/unfamiliar) interspersed with silence.</p>
+    <p>We developed a processing pipeline consisting of:
+      <ul>
+        <li>Preliminary preprocessing with the xDAWN spatial filter.</li>
+        <li>Optimization of feature extraction in both time and frequency domains.</li>
+        <li>Classification using Support Vector Machines (SVM), the most common approach in EEG studies.</li>
+      </ul>
+    </p>
+    <p>Results showed:
+      <ul>
+        <li>Classification performance strongly depends on feature extraction strategy.</li>
+        <li>There is substantial inter-individual variability in EEG patterns.</li>
+        <li>Optimizing SVM hyperparameters (often overlooked in the literature) significantly impacts classification accuracy and statistical reliability.</li>
+        <li>Optimal parameters differ across subjects, underlining the need for personalized tuning in EEG-based machine learning applications.</li>
+      </ul>
+    </p>
+  </section>
 
+  <section id="theme3" class="research-theme-card">
+    <div class="title-line">
+      <img src="/images/site_icons/machine_learning.PNG" alt="Icon 3" class="theme-icon">
+      <h4>Machine Learning for EEG</h4>
+    </div>
+    <p>Diagnostic challenges are frequent in medicine, particularly in neurology and psychiatry, where clinicians often lack physiological biomarkers to characterize certain diseases (e.g., depression, coma, neurodegenerative conditions), especially in early stages.</p>
+    <p>Electroencephalography (EEG) has become increasingly common for exploring these pathologies. Brain activity can be recorded non-invasively, and analyzing these signals allows us to map brain regions and temporal dynamics triggered by specific stimuli. However, EEG analysis remains complex due to multiple noise sources (background activity, eye movements, artifacts) and high inter-individual variability.</p>
+    <p>In conventional studies, these issues are mitigated by averaging a large number of trials across participants, allowing random activity to cancel out while relevant signals emerge. This approach is not easily transferable to clinical practice, where diagnosis often needs to be performed on a single patient, highlighting the need for more robust methods to overcome unfavorable signal-to-noise ratios.</p>
+    <p>Recent advances in machine learning and reverse-correlation methods applied to EEG offer the ability to distinguish neural events that are otherwise barely detectable using traditional analyses. These techniques open the possibility of moving from group-level statistical findings to individualized diagnostic results, potentially transforming clinical neurophysiology.</p>
+    <p>Across my research, I have pursued two main goals:
+        <ul>
+          <li>To develop novel ways of extracting meaningful information from electrophysiological data.</li>
+          <li>To improve or propose new diagnostic and prognostic protocols for neuropsychiatric disorders.</li>
+      </ul>
+    </p>
+  </section>
 
+  <section id="theme4" class="research-theme-card">
+    <div class="title-line">
+      <img src="/images/site_icons/brain_consciousness.png" alt="Icon 4" class="theme-icon">
+      <h4>Disorders of Consciousness</h4>
+    </div>
+    <p>These studies address diagnosis of pathological states of consciousness, where patients lose the ability to interact with their environment. Determining residual consciousness is crucial for clinical decision-making and ethical considerations around life-sustaining treatment. The absence of behavioral responses cannot be considered absolute proof of lack of comprehension or intention to communicate. We therefore explore direct neural markers of cognitive processing to establish reliable prognostic tools.</p>
+    <p>Cognitive event-related potentials (ERPs) from EEG, such as N100, MMN, P300, and N400, are particularly suited to evaluate residual brain capacities to process simple or complex stimuli.</p>
+    <h5>Pre-semantic Processing (Completed Study)</h5>
+    <p>The N400 component is a negative ERP peaking ~400 ms after a stimulus onset, typically recorded in centro-parietal areas, and is sensitive to the semantic congruence of auditory input. Observation of an N400 effect indicates access to meaning, a capacity correlated with better outcomes in patients with altered consciousness.</p>
+    <p>We used a paradigm with 120 word quartets: the first three words set a semantic context, the fourth could be congruent or incongruent. Data were collected from 30 healthy subjects and analyzed both traditionally and using SVM classifiers, with feature optimization via genetic algorithms.</p>
+    <p>Results showed:
+      <ul>
+        <li>Clear N400 effects in response to semantic violations.</li>
+        <li>Genetic algorithm optimization coupled with SVM drastically improved classification performance.</li>
+        <li>However, test accuracy did not scale accordingly, suggesting possible overfitting due to low signal-to-noise ratios in EEG data.</li>
+      </ul>
+    </p>
+    <h5>Reaction to the Patient’s Own Name (Ongoing Study)</h5>
+    <p>The P300 component is elicited when attention is drawn to rare, significant stimuli—such as hearing one’s own name. In an “oddball paradigm,” frequent beeps are mixed with occasional recordings of the subject's name. In patients with altered consciousness, a P300 response to their own name can correlate with better recovery prognosis.</p>
+    <p>In typical clinical practice, name recordings are made ad hoc, often in uncontrolled acoustic conditions, potentially affecting stimulus quality. Our study investigates whether latency, amplitude, and detectability of P300 responses are influenced by acoustic and prosodic characteristics of the spoken name.</p>
+    <p>We record EEG responses in healthy subjects (data collection complete) and patients (ongoing), using multiple acoustic variations of the same name. With reverse-correlation analysis, we aim to uncover prosodic patterns that enhance neural detectability, potentially guiding the design of optimized auditory stimuli for clinical assessments.</p>
+  </section>
 
+  <section id="theme5" class="research-theme-card">
+    <div class="title-line">
+      <img src="/images/site_icons/autism.PNG" alt="Icon 5" class="theme-icon">
+      <h4>Vocal Smiles & Autism</h4>
+    </div>
+    <p>Autism spectrum disorder (ASD) affects ~1 in 150 individuals worldwide (~600,000 in France) and is characterized by major difficulties in social communication. One of the most recurrent early signs is the absence of social smiling.</p>
+     <p>A smile changes the acoustic structure of speech by stretching vocal formants. "Smiling voices" automatically trigger unconscious facial mimicry in typical listeners. Our project examines how neutral versus smiling voices are processed along the perception-action chain in autistic and neurotypical individuals—from sensory encoding, to emotional perception, to motor imitation (assessed via EEG and facial EMG).</p>
+     <p>This research aims to disentangle the sensory-perceptual vs. emotional contributions to social communication challenges in ASD, providing mechanistic insights that may inspire future evidence-based interventions for children and adults on the spectrum.</p>
+  </section>
 </section>
