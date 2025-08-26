@@ -397,3 +397,86 @@ details {
   line-height: 1.5;
 }
 
+
+
+/*brochure experimentarium*/
+.featured-outreach {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  align-items: start;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 115, 153, 0.2); /*color change*/
+  padding: 16px 18px;
+  margin: 18px 0 26px;
+}
+
+.featured-outreach .fo-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.featured-outreach .fo-title {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.featured-outreach .fo-tagline {
+  margin: 0 0 10px 0;
+  color: #555;
+}
+
+.featured-outreach .fo-highlights {
+  margin: 0 0 12px 18px;
+  padding: 0;
+}
+
+.featured-outreach .fo-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.featured-outreach .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+}
+
+.featured-outreach .btn.btn-primary {
+  background: #2b6cb0;
+  color: #fff;
+  border-color: #2b6cb0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .featured-outreach {
+    grid-template-columns: 1fr;
+  }
+  .featured-outreach .fo-thumb {
+    max-width: 260px;
+  }
+}
+
+
+/*sound integration*/
+.outreach-audio {
+  background:#fff; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.08);
+  padding:12px 14px; margin:16px 0;
+}
+.outreach-audio .title-line {display:flex; align-items:center; gap:8px; margin:0 0 6px;}
+.outreach-audio .title-line h4 {margin:0; font-size:1.05rem;}
+.outreach-audio .credit {display:block; margin-top:6px; color:#777;}
+.outreach-audio.native audio {height:36px;}
+
