@@ -51,48 +51,62 @@ permalink: /outreach
   <div class="container">
     <h3 style="margin-top: 1rem; text-align: center;">Events</h3>
 
-      <div class="featured-outreach" style="grid-template-columns: 400px 1fr;">
-        <h4>2019 – Exhibition at the Eurockéennes Festival, Belfort</h4>
-        <div class="fo-thumb">
-          <a>
-            <img src="/images/outreach/eurocks.jpg" alt="Eurockéennes">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">2019 – Exhibition at the Eurockéennes Festival, Belfort</h4>
+        <img class="event-media" src="/images/outreach/eurocks.jpg" alt="Eurockéennes, 2019" style="width:500px">
 
-        <div class="fo-content">
+        <div class="event-text">
           <p>The Eurockéennes de Belfort is one of France’s largest music festivals, attracting over 100,000 spectators each year. In 2019, I contributed to a university-led exhibition presented on large panels within the festival grounds, showcasing research on music and the brain. This initiative brought scientific insights into a major cultural event, highlighting how neuroscience and music intersect in a space usually reserved for performance and entertainment.</p>
         </div>
       </div>
       
+      <div class="event-card">
+        <h4 class="event-title">2019 – “Live My Life as a PhD Student” Photo Contest, Adoc Association</h4>
+        <img class="event-media" src="/images/outreach/adoc.jpg" alt="Adoc, 2019" style="width:400px">
 
-      <div class="featured-outreach" style="grid-template-columns: 400px 1fr;">
-        <h4>2019 – “Live My Life as a PhD Student” Photo Contest, Adoc Association</h4>
-        <div class="fo-thumb">
-          <a>
-            <img src="/images/outreach/adoc.jpg" alt="Adoc">
-          </a>
-        </div>
-
-        <div class="fo-content">
+        <div class="event-text">
           <p>In 2019, I entered the contest “Live My Life as a PhD Student” organized by the Adoc association. The selected photos were exhibited in university libraries in Besançon and other French university towns</p>
           <p>Research demands keeping up with the scientific literature to stay at the state of the art. But during thesis writing, better not drop the stack!</p>
         </div>
       </div>
 
-      <div class="featured-outreach">
-        <div class="fo-thumb">
-          <h4>2019 – Live Radio Experience, Modulations Festival, Besançon</h4>
-          <a>
-            <img src="/images/outreach/modulation_brochure.jpg" alt="Modulation festival brochure cover">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">2019 – Live Radio Experience, Modulations Festival, Besançon</h4>
+        <img class="event-media" src="/images/outreach/modulation_brochure.jpg" alt="Modulation festival brochure cover" style="width:180px">
 
-        <div class="fo-content">
+        <div class="event-text">
           <p>As part of the Modulations Festival (Festival Sonore) in Besançon, I joined the live radio program Ondes chercheuses alongside Dr. Thibault Chabin, one of my fellows PhD students. In this 60-minute broadcast, we explored the links between music, emotions, and emotional contagion. Speaking within a festival dedicated to experimental sound created a unique context to share research insights with a broad cultural audience, connecting neuroscience to the artistic and social dimensions of music.</p>
         </div>
       </div>
 
 
+      <!-- special avec son a remettre-->
+      <div class="event-card">
+        <h4 class="event-title">2018 – Nuit Européenne des Chercheurs, Besançon</h4>
+
+        <section class="event-media" style="width:100%">
+          <img src="/images/outreach/nuit_des_chercheurs_2018.png" alt="Nuit des chercheurs 2018" style="width:300px">
+          <section class="outreach-audio native">
+            <div class="title-line">
+              <i class="fa fa-microphone"></i>
+            </div>
+            <audio controls preload="metadata" src="/audio/NDC_2018.m4a" style="width:100%"></audio>
+            <small class="credit">© Cécile Pollart</small>
+          </section>
+        </section>
+
+        <div class="event-text">
+          <p>The Nuit Européenne des Chercheurs is a Europe-wide event where researchers meet the public through interactive demonstrations, live performances, and discussions, all on the same evening across more than 200 cities. In Besançon, the event was held at the Musée du Temps, transforming the space into a lively hub of scientific discovery.</p>
+          <p>I took part with the neuroscience team, presenting an interactive installation where visitors wore an EEG cap and watched their emotions appear on a screen in real time. Moving spheres shifted according to the participant’s emotional state—joy, anger, or sadness—making brain activity visible and tangible. Alongside this demonstration, I explained how EEG and machine learning can be combined to classify different types of brain activity, from concentration and relaxation to music perception and emotional processing, with potential applications in clinical diagnosis.</p>
+          <p>That evening, I was also interviewed live on Radio Campus Besançon for a special broadcast. Using everyday analogies—like teaching a computer to tell apart cats and dogs—I described how machine learning can learn to distinguish subtle neural patterns, and how this could one day help doctors detect depression, Alzheimer’s disease, or support prognosis in coma patients. The live exchange allowed me to share both the playful side of neuroscience and its long-term medical impact.</p>
+          <p>Finally, I emphasized the international dimension of my research. Although my thesis was based in Besançon, it relied on close collaboration with colleagues in Switzerland, Germany, and Spain, whose expertise in psychiatry, mathematics, and machine learning enriched the project. This European network embodied the spirit of the event itself: science as a collaborative endeavor, crossing borders to tackle complex questions together.</p>
+        </div>
+      </div>
+
+
+
+
+      <!-- ancienne version a enlever -->
       <div class="featured-outreach" style="grid-template-columns: 300px 1fr;">
         <h4>2018 – Nuit Européenne des Chercheurs, Besançon</h4>
         <div class="fo-thumb">
@@ -111,20 +125,14 @@ permalink: /outreach
             <small class="credit">© Cécile Pollart</small>
           </section>
           <p>The Nuit Européenne des Chercheurs is a Europe-wide event where researchers meet the public through interactive demonstrations, live performances, and discussions, all on the same evening across more than 200 cities. In Besançon, the event was held at the Musée du Temps, transforming the space into a lively hub of scientific discovery.</p>
-          <p>I took part with the neuroscience team, presenting an interactive installation where visitors wore an EEG cap and watched their emotions appear on a screen in real time. Moving spheres shifted according to the participant’s emotional state—joy, anger, or sadness—making brain activity visible and tangible. Alongside this demonstration, I explained how EEG and machine learning can be combined to classify different types of brain activity, from concentration and relaxation to music perception and emotional processing, with potential applications in clinical diagnosis.</p>
-          <p>That evening, I was also interviewed live on Radio Campus Besançon for a special broadcast. Using everyday analogies—like teaching a computer to tell apart cats and dogs—I described how machine learning can learn to distinguish subtle neural patterns, and how this could one day help doctors detect depression, Alzheimer’s disease, or support prognosis in coma patients. The live exchange allowed me to share both the playful side of neuroscience and its long-term medical impact.</p>
-          <p>Finally, I emphasized the international dimension of my research. Although my thesis was based in Besançon, it relied on close collaboration with colleagues in Switzerland, Germany, and Spain, whose expertise in psychiatry, mathematics, and machine learning enriched the project. This European network embodied the spirit of the event itself: science as a collaborative endeavor, crossing borders to tackle complex questions together.</p>
-          </div>
+        </div>
       </div>
 
-      <div class="featured-outreach">
-        <div class="fo-thumb">
-          <a>
-            <img src="/images/outreach/nuit_des_chercheurs_2017.jpg" alt="Nuit des chercheurs 2017">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">2017 – Nuit Européenne des Chercheurs, Besançon</h4>
+        <img class="event-media" src="/images/outreach/nuit_des_chercheurs_2017.jpg" alt="Nuit des chercheurs 2017" style="width:180px">
 
-        <div class="fo-content">
+        <div class="event-text">
           <p>The Nuit Européenne des Chercheurs is a pan-European evening dedicated to encounters between scientists and the public. In 2017, the Besançon edition was held at the former Faculty of Medicine, Place Saint-Jacques, where dozens of researchers offered interactive activities and demonstrations.</p>
           <p>I presented an installation developed with the neuroscience team that allowed the public to “paint with their brain.” Visitors equipped with an EEG cap could see their emotional states instantly translated into colors projected on a screen.</p>
           <p>This visualization linked inner states and visual expression, which made brain activity both visible and playful for the participants.</p>
@@ -132,16 +140,14 @@ permalink: /outreach
         </div>
       </div>
 
-      <div class="featured-outreach">
-        <div class="fo-thumb">
-          <a>
-            <img src="/images/outreach/radiocampus_logo.png" alt="Logo Radiocampus">
-          </a>
-        </div>
+      
 
-        <div class="fo-content">
-          <h4>February 2018 – Radio Interview, Radio Campus Besançon</h4>
-          <!-- Native audio player -->
+      <!-- special avec son-->
+      <div class="event-card">
+        <h4 class="event-title">February 2018 – Radio Interview, Radio Campus Besançon</h4>
+
+        <section class="event-media" style="width:100%">
+          <img src="/images/outreach/radiocampus_logo.png" alt="Logo Radiocampus">
           <section class="outreach-audio native">
             <div class="title-line">
               <i class="fa fa-microphone"></i>
@@ -149,7 +155,9 @@ permalink: /outreach
             <audio controls preload="metadata" src="/audio/interview_radiocampus.m4a" style="width:100%"></audio>
             <small class="credit">© Cécile Pollart</small>
           </section>
+        </section>
 
+        <div class="event-text">
           <p>In 2018, I was invited to the university radio program UniversCité on Radio Campus Besançon to share my PhD research with a broad public audience. During the interview, I explained how electroencephalography (EEG) can record brain activity and how machine learning helps decode complex signals linked to memory, emotions, and perception.</p>
           <p>A highlight of the conversation was the Rihanna project, where participants listened to familiar and unfamiliar songs interrupted by short silences. > “When you know the song, your brain keeps going and fills in the gap—almost like saying please don’t stop the music.” The study showed how familiarity and preference (“I love this song” vs. “I can’t stand it”) produce distinct patterns of brain activity, and how these insights could support early diagnostic tools for Alzheimer’s disease and depression.</p>
           <p>To make the concepts concrete, I used analogies: teaching a computer to classify brain activity is like teaching a child to tell apart cats and dogs—by giving many examples until the distinguishing features become clear. This illustrated how machine learning moves us from averaged group data to individualized analyses for each patient.</p>
@@ -157,86 +165,62 @@ permalink: /outreach
         </div>
       </div>
 
-      <div class="featured-outreach" style="grid-template-columns: 500px 1fr;">
-        <div class="fo-thumb">
-          <h4>2017 – Scientific Communication Contest, Société de Biologie de Besançon</h4>
-          <a>
-            <img src="/images/outreach/SBB_contest.jpg" alt="SBB contest, 2017">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">2017 – Scientific Communication Contest, Société de Biologie de Besançon</h4>
+        <img class="event-media" src="/images/outreach/SBB_contest.jpg" alt="SBB contest, 2017" style="width:500px">
 
-        <div class="fo-content">
-            <p>In December 2017, I took part in the scientific communication contest organized by the Société de Biologie de Besançon. This event gathered researchers from across the life sciences—mainly cell biology, genetics, and microbiology—and offered a platform to present research in an accessible and engaging way.</p>
-            <p>My presentation introduced an original approach to neuroscience within this context: using EEG signal processing and machine learning to detect residual consciousness in patients with disorders of consciousness. While the local audience was more accustomed to molecular and cellular topics, my talk showcased how computational methods such as Support Vector Machines and genetic algorithms can extract meaningful neural patterns from noisy EEG data.</p>
-            <p>The challenge was particularly stimulating, as it required me to translate abstract concepts like feature extraction and algorithmic optimization into language accessible to biologists outside of my field. The experience demonstrated how artificial intelligence can enrich medical diagnostics, offering new tools for detecting neuro-markers of consciousness and supporting clinicians in critical decisions.</p>
+        <div class="event-text">
+          <p>In December 2017, I took part in the scientific communication contest organized by the Société de Biologie de Besançon. This event gathered researchers from across the life sciences—mainly cell biology, genetics, and microbiology—and offered a platform to present research in an accessible and engaging way.</p>
+          <p>My presentation introduced an original approach to neuroscience within this context: using EEG signal processing and machine learning to detect residual consciousness in patients with disorders of consciousness. While the local audience was more accustomed to molecular and cellular topics, my talk showcased how computational methods such as Support Vector Machines and genetic algorithms can extract meaningful neural patterns from noisy EEG data.</p>
+          <p>The challenge was particularly stimulating, as it required me to translate abstract concepts like feature extraction and algorithmic optimization into language accessible to biologists outside of my field. The experience demonstrated how artificial intelligence can enrich medical diagnostics, offering new tools for detecting neuro-markers of consciousness and supporting clinicians in critical decisions.</p>
         </div>
       </div>
 
-      <div class="featured-outreach">
-        <div class="fo-thumb">
-          <h4>May 2017 – Experimentarium Festival, Arles</h4>
-          <a>
-            <img src="/images/outreach/affiche_fest_expe.PNG" alt="Experimentarium festival, 2017">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">May 2017 – Experimentarium Festival, Arles</h4>
+        <img class="event-media" src="/images/outreach/affiche_fest_expe.PNG" alt="Experimentarium festival, 2017" style="width:180px">
 
-        <div class="fo-content">
-            <p>In May 2017, I took part in the Experimentarium Festival in Arles, alongside young researchers from across France and Québec. The event was particularly enriching because it pushed us to adapt our communication formats to very different audiences and contexts. Over two days, I presented my research in a variety of settings: to passersby at the famous Arles market, to visitors at the museum during the Night of Museums, and to several middle school classes.</p>
-            <p>One memorable challenge involved explaining my work using three randomly chosen objects—a stuffed parrot, a music box, and a clothes hanger. This playful exercise forced me to practice flexibility, creativity, and quick pitching skills while making complex ideas accessible.</p>
-            <p>Beyond public engagement, the festival also offered the chance to meet fellow early-career researchers working on a wide spectrum of topics, from adapting ancient Greek plays into contemporary language to improving the precision of atomic clocks for GPS technology. This exchange of ideas highlighted the richness of interdisciplinary science communication and the many ways research can connect with society.</p>
+        <div class="event-text">
+          <p>In May 2017, I took part in the Experimentarium Festival in Arles, alongside young researchers from across France and Québec. The event was particularly enriching because it pushed us to adapt our communication formats to very different audiences and contexts. Over two days, I presented my research in a variety of settings: to passersby at the famous Arles market, to visitors at the museum during the Night of Museums, and to several middle school classes.</p>
+          <p>One memorable challenge involved explaining my work using three randomly chosen objects—a stuffed parrot, a music box, and a clothes hanger. This playful exercise forced me to practice flexibility, creativity, and quick pitching skills while making complex ideas accessible.</p>
+          <p>Beyond public engagement, the festival also offered the chance to meet fellow early-career researchers working on a wide spectrum of topics, from adapting ancient Greek plays into contemporary language to improving the precision of atomic clocks for GPS technology. This exchange of ideas highlighted the richness of interdisciplinary science communication and the many ways research can connect with society.</p>
         </div>
       </div>
 
-      <div class="featured-outreach" style="grid-template-columns: 400px 1fr;">
-        <div class="fo-thumb">
-          <h4>May 2017 – Workshop and Research Careers Talk at Lycée Pasteur, Besançon</h4>
-          <a>
-            <img src="/images/outreach/lycee_pasteur.jpg" alt="Pasteur High School Sophomore Year, 2017">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">May 2017 – Workshop and Research Careers Talk at Lycée Pasteur, Besançon</h4>
+        <img class="event-media" src="/images/outreach/lycee_pasteur.jpg" alt="Pasteur High School Sophomore Year, 2017" style="width:400px">
 
-        <div class="fo-content">
-            <p>In May 2017, I presented my interactive workshop at Lycée Pasteur in Besançon for a group of high school Sophomore students. Alongside the activity, I also shared insights about the daily life of a researcher and the path to a scientific career. What struck me most was the contrast between the lively curiosity of younger children in previous workshops and the stress these teenagers expressed, shaped by strong academic pressure and expectations. This experience highlighted for me the importance of encouraging not only scientific understanding but also joy and confidence in learning at every stage of education.</p>
+        <div class="event-text">
+          <p>In May 2017, I presented my interactive workshop at Lycée Pasteur in Besançon for a group of high school Sophomore students. Alongside the activity, I also shared insights about the daily life of a researcher and the path to a scientific career. What struck me most was the contrast between the lively curiosity of younger children in previous workshops and the stress these teenagers expressed, shaped by strong academic pressure and expectations. This experience highlighted for me the importance of encouraging not only scientific understanding but also joy and confidence in learning at every stage of education.</p>
         </div>
       </div>
 
-      <div class="featured-outreach" style="grid-template-columns: 400px 1fr;">
-        <div class="fo-thumb">
-          <h4>April 2017 – Science Workshop at the Botanical Garden of Besançon</h4>
-          <a>
-            <img src="/images/outreach/garden01.JPG" alt="Botanical garden intervention, 2017">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">April 2017 – Science Workshop at the Botanical Garden of Besançon</h4>
+        <img class="event-media" src="/images/outreach/garden01.JPG" alt="Botanical garden intervention, 2017" style="width:400px">
 
-        <div class="fo-content">
-            <p>The following month, in April 2017, I was invited to present the same interactive workshop at the Botanical Garden of Besançon. Once again, the audience brought together both children and adults from diverse backgrounds. In this setting, surrounded by a space dedicated to discovery and learning, participants explored how the brain reacts to familiar versus unfamiliar music, and how machine learning can be trained to classify these brain responses. Repeating the workshop in different public venues reinforced my ability to adapt scientific communication to varied audiences and contexts while keeping it engaging and accessible.</p>
+        <div class="event-text">
+          <p>The following month, in April 2017, I was invited to present the same interactive workshop at the Botanical Garden of Besançon. Once again, the audience brought together both children and adults from diverse backgrounds. In this setting, surrounded by a space dedicated to discovery and learning, participants explored how the brain reacts to familiar versus unfamiliar music, and how machine learning can be trained to classify these brain responses. Repeating the workshop in different public venues reinforced my ability to adapt scientific communication to varied audiences and contexts while keeping it engaging and accessible.</p>
         </div>
       </div>
 
-      <div class="featured-outreach" style="grid-template-columns: 400px 1fr;">
-        <div class="fo-thumb">
-          <h4>March 2017 – Science Workshop at Pierre Bayle Media Library, Besançon</h4>
-          <a>
-            <img src="/images/outreach/mediatheque.jpg" alt="Mediatheque intervention, 2017">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">March 2017 – Science Workshop at Pierre Bayle Media Library, Besançon</h4>
+        <img class="event-media" src="/images/outreach/mediatheque.jpg" alt="Mediatheque intervention, 2017" style="width:400px">
 
-        <div class="fo-content">
-            <p>In March 2017, I presented this interactive workshop again at the Pierre Bayle Media Library in Besançon, this time for a mixed audience of children and adults of all ages and backgrounds. Adapting the activity beyond the classroom setting allowed me to spark curiosity in a wide variety of participants, encouraging them to think about how the brain processes familiar and unfamiliar music, and how machine learning can help us make sense of these signals. The experience showed me the importance of flexibility in science communication and how engaging formats can resonate across generations.</p>
+        <div class="event-text">
+          <p>In March 2017, I presented this interactive workshop again at the Pierre Bayle Media Library in Besançon, this time for a mixed audience of children and adults of all ages and backgrounds. Adapting the activity beyond the classroom setting allowed me to spark curiosity in a wide variety of participants, encouraging them to think about how the brain processes familiar and unfamiliar music, and how machine learning can help us make sense of these signals. The experience showed me the importance of flexibility in science communication and how engaging formats can resonate across generations.</p>
         </div>
       </div>
 
-      <div class="featured-outreach" style="grid-template-columns: 400px 1fr;">
-        <div class="fo-thumb">
-          <h4>October 2016 – Experimentarium Outreach Training</h4>
-          <a>
-            <img src="/images/outreach/expéclass.JPG" alt="5th grade intervention, 2016">
-          </a>
-        </div>
+      <div class="event-card">
+        <h4 class="event-title">October 2016 – Experimentarium Outreach Training</h4>
+        <img class="event-media" src="/images/outreach/expéclass.JPG" alt="5th grade intervention, 2016" style="width:400px">
 
-        <div class="fo-content">
-            <p>At the start of my PhD in 2016, I joined the Experimentarium program run by the University’s Science, Art and Culture department. This one-week training prepared doctoral students to communicate their research in clear, engaging ways. My project explored how machine learning can be used to classify brain activity recorded with EEG while people listen to familiar and unfamiliar music.</p>
-            <p>To make this concept accessible to children, I designed an interactive session in a fifth-grade classroom. First, the pupils listened to different pieces of music and reflected on how their brains might process them. Then, as a game, they took on the role of a “machine learning model”: their task was to sort and separate the two kinds of brain activity, just as a computer would. The activity sparked lively discussions, showed them how research connects with everyday experiences, and gave me a lasting foundation in creative science communication.</p>
+        <div class="event-text">
+          <p>At the start of my PhD in 2016, I joined the Experimentarium program run by the University’s Science, Art and Culture department. This one-week training prepared doctoral students to communicate their research in clear, engaging ways. My project explored how machine learning can be used to classify brain activity recorded with EEG while people listen to familiar and unfamiliar music.</p>
+          <p>To make this concept accessible to children, I designed an interactive session in a fifth-grade classroom. First, the pupils listened to different pieces of music and reflected on how their brains might process them. Then, as a game, they took on the role of a “machine learning model”: their task was to sort and separate the two kinds of brain activity, just as a computer would. The activity sparked lively discussions, showed them how research connects with everyday experiences, and gave me a lasting foundation in creative science communication.</p>
         </div>
       </div>
     </div>

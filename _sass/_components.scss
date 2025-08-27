@@ -259,26 +259,96 @@ img.zoom-img {
   gap: 2rem;
 }
 
-.event-card {
+.event-card{
   background: #fff;
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 115, 153, 0.2); /*color change*/
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  position:relative;
+  /* clear the float */
+  &::after{content:"";display:block;clear:both;}
+}
+
+.event-title{
+  margin: 0 0 .75rem;
+  font-weight: 600;
+  color: #223;
+}
+
+
+.event-media{
+  float: right;
+  width: auto;          /* or 25/35/45% if you use size classes */
+  max-width: 100%;       /* adjust as you like */
+  height: auto;         /* important */
+  max-height: none;     /* remove any previous cap */
+  object-fit: contain;  /* or remove entirely */
+  border-radius: 8px;
+  margin: 0 0 .75rem 1rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+  margin-bottom: 1rem;
 
   img {
-    width: 100%;
+    width: 180px;
     height: auto;
-    object-fit: cover;
+    flex-shrink: 0;
   }
 
-  .event-text {
-    padding: 1rem;
-    font-size: 1rem;
-    color: #333;
+  .outreach-audio {
+  flex: 1;
+  display: flex;
+  min-width: 250px;
+  max-width: 100%;
+  background:#fff; 
+  border-radius:10px; 
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  padding:12px 14px; margin:16px 0;
+  }
+  .outreach-audio .title-line {display:flex; align-items:center; gap:8px; margin:0 0 6px;}
+  .outreach-audio .title-line h4 {margin:0; font-size:1.05rem;}
+  .outreach-audio .credit {display:block; margin-top:6px; color:#777;}
+  .outreach-audio.native audio {height:36px;}
+
+  .outreach-audio {
+    flex: 1;
+    display: flex;
+    min-width: 250px;
+    max-width: 100%;
+
+    /*audio {
+      width: 100%;
+    }*/
   }
 }
+
+
+
+/* Text just flows around the floated image */
+.event-text{
+  font-size:.96rem;
+  line-height:1.6;
+  color:#444;
+}
+
+/* Alternate image side for every other card (optional, for variety) */
+.events-section .event-card:nth-child(even) .event-media{
+  float:left;
+  margin:0 1rem .75rem 0;
+}
+
+/* Mobile: stack vertically */
+@media (max-width:700px){
+  .event-media{
+  float:none;
+  width:100%;
+  max-height:320px;
+  margin:0 0 .75rem 0;}
+}
+
 
 /*details*/
 details {
@@ -472,7 +542,9 @@ details {
 
 /*sound integration*/
 .outreach-audio {
-  background:#fff; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.08);
+  background:#fff; 
+  border-radius:10px; 
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
   padding:12px 14px; margin:16px 0;
 }
 .outreach-audio .title-line {display:flex; align-items:center; gap:8px; margin:0 0 6px;}
