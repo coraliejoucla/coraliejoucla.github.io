@@ -124,12 +124,26 @@
     margin-bottom: 0.5rem;
   }
 
+  .fa-ul {
+    list-style: none;
+    .fa-li {
+      font-size: 0.8em; /* or px/rem like 14px */
+      color: black !important;
+
+      left: 0;
+
+      top: 0em;              /* Adjust this value to fine-tune alignment */
+      position: relative;      /* Required to apply vertical offset */
+      /*line-height: 1.2em; */      /* Helps maintain baseline alignment */
+    }
+  }
+
   ul {
-    padding-left: 1.2rem;
+    /*padding-left: 1.2rem;*/
     margin-bottom: 1rem;
 
     li {
-      list-style: disc;
+      /*list-style: disc;*/
       line-height: 1.5;
     }
   }
@@ -386,6 +400,9 @@ details {
 }
 
 
+
+
+
 .languages-list {
   display: flex;
   flex-direction: column;
@@ -551,4 +568,11 @@ details {
 .outreach-audio .title-line h4 {margin:0; font-size:1.05rem;}
 .outreach-audio .credit {display:block; margin-top:6px; color:#777;}
 .outreach-audio.native audio {height:36px;}
+
+.talk-title {
+  color: #007acc;   /* or inherit from a.link */
+  text-decoration: none; /* no underline */
+  font-style: italic;
+}
+
 
