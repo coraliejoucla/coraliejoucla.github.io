@@ -21,7 +21,7 @@ permalink: /research
     </a>
     <a href="#theme4" class="research-card">
       <img src="/images/site_icons/brain_consciousness.png" alt="Icon 4" />
-      <h4>Consciousness & Prognosis</h4>
+      <h4>Disorders of Consciousness</h4>
     </a>
     <a href="#theme5" class="research-card">
       <img src="/images/site_icons/autism.PNG" alt="Icon 5" />
@@ -33,6 +33,7 @@ permalink: /research
     </a>
   </div>
 
+  <h4 class="mb-2">Overview</h4>
   <p class="mt-2">My research lies at the intersection of neuroscience, signal processing, and clinical care. I study how brain activity reflects perception, emotion, and cognition— especially in people whose minds are harder to access: patients with depression, disorders of consciousness, or autism.</p>
   <p>What drives me is curiosity. I see each study as both a scientific challenge and a creative journey—designing new paradigms, building tools, and trying to consider issues from a different perspective.</p>
   <p>My analyses combine rigorous EEG signal processing with advanced computational tools such as machine learning, genetic algorithms, and reverse correlation. I enjoy the collaborative puzzle-solving that happens at the interface between neuroscience, computer science, and mathematics.</p>
@@ -47,15 +48,15 @@ permalink: /research
       <h4>EEG Signal Analysis</h4>
     </div>
     <p>Diagnostic challenges are frequent in medicine, particularly in neurology and psychiatry, where clinicians often lack physiological biomarkers to characterize certain diseases (e.g., depression, coma, neurodegenerative conditions), especially in early stages.</p>
-    <p>Electroencephalography (EEG) has become increasingly common for exploring these pathologies. Brain activity can be recorded non-invasively, and analyzing these signals allows us to map brain regions and temporal dynamics triggered by specific stimuli. However, EEG analysis remains complex due to multiple noise sources (background activity, eye movements, artifacts) and high inter-individual variability.</p>
-    <p>In conventional studies, these issues are mitigated by averaging a large number of trials across participants, allowing random activity to cancel out while relevant signals emerge. This approach is not easily transferable to clinical practice, where diagnosis often needs to be performed on a single patient, highlighting the need for more robust methods to overcome unfavorable signal-to-noise ratios.</p>
-    <p>Recent advances in machine learning and reverse-correlation methods applied to EEG offer the ability to distinguish neural events that are otherwise barely detectable using traditional analyses. These techniques open the possibility of moving from group-level statistical findings to individualized diagnostic results, potentially transforming clinical neurophysiology.</p>
+    <p>I began working with EEG during my master’s for its non-invasive nature, millisecond temporal resolution and clinical deployability — it lets me study timing-sensitive processes and work with patients (Alzheimer’s, older adults) without the constraints of fMRI or invasive recordings.</p>
     <p>Across my research, I have pursued two main goals:
         <ul>
           <li>To develop novel ways of extracting meaningful information from electrophysiological data.</li>
           <li>To improve or propose new diagnostic and prognostic protocols for neuropsychiatric disorders.</li>
       </ul>
     </p>
+    <p>Technically I trained across the whole pipeline: from manual preprocessing and visual inspection using GUI tools to fully automated, reproducible pipelines. I learned MATLAB by myself and scripted plugins, classes and functions to transform expert, labor-intensive workflows into automated routines.</p>
+    <p>Today my strength lies at the intersection of neuroscience, signal intuition and software engineering: I adapt pipelines to protocol and patient type, port tools toward Python with an open-science mindset, and integrate individualized analyses and machine-learning methods for clinically relevant outcomes. My trajectory is pragmatic and coherent — question-driven method choice, mastery of manual handling, then automation and reproducibility for clinical application</p>
   </section>
 
   <section id="theme2" class="research-theme-card">
@@ -63,25 +64,19 @@ permalink: /research
       <img src="/images/site_icons/music.png" alt="Icon 2" class="theme-icon">
       <h4>Music, Memory & Emotion</h4>
     </div>
-    <p>Music is a powerful emotional stimulus, and emotional valence has been shown to facilitate memory encoding—information we enjoy is stored more rapidly and durably. We sought to determine whether musical appreciation affects neuromarkers of learning in healthy participants.</p>
-    <p>Twenty volunteers listened to five unfamiliar songs over two weeks. The two most liked and two least liked tracks were then selected for testing. Using 256-channel high-resolution EEG, participants re-listened to these songs with 20 silent gaps inserted per track. Time-frequency analyses revealed specific oscillatory activity patterns (notably in theta and alpha bands) during silence periods, localized to brain regions such as the inferior frontal gyrus and superior temporal gyrus—areas known to be involved in music processing. This work provided evidence that musical preference shapes neural encoding dynamics.
-    EEG, Machine Learning, and Music (Completed, Submitted for Publication)</p>
-    <p>We next explored automatic classification of neural activity associated with imagery of familiar versus unfamiliar songs using machine learning. EEG data were recorded from 20 volunteers listening to 20 songs (familiar/unfamiliar) interspersed with silence.</p>
-    <p>We developed a processing pipeline consisting of:
-      <ul>
-        <li>Preliminary preprocessing with the xDAWN spatial filter.</li>
-        <li>Optimization of feature extraction in both time and frequency domains.</li>
-        <li>Classification using Support Vector Machines (SVM), the most common approach in EEG studies.</li>
-      </ul>
-    </p>
-    <p>Results showed:
-      <ul>
-        <li>Classification performance strongly depends on feature extraction strategy.</li>
-        <li>There is substantial inter-individual variability in EEG patterns.</li>
-        <li>Optimizing SVM hyperparameters (often overlooked in the literature) significantly impacts classification accuracy and statistical reliability.</li>
-        <li>Optimal parameters differ across subjects, underlining the need for personalized tuning in EEG-based machine learning applications.</li>
-      </ul>
-    </p>
+<p>I’m a musician who went into neuroscience because I wanted to understand why music lights up the mind. That curiosity became the backbone of the Rihanna project: I investigated how musical memory — which recruits distributed cortical networks — can remain remarkably preserved in neurodegenerative conditions where hippocampus-dependent autobiographical memory fails. My goal was practical and clinical: to test whether the mechanisms supporting musical memory differ from those behind other memory disturbances, and whether those differences can help distinguish, for example, Alzheimer’s disease from late-life depression so that care can be better targeted.
+I’ve also explored how emotional appraisal, familiarity and liking shape what we remember from music. I studied musical frisson and collective musical experiences to see how shared emotional moments map onto memory and behaviour, and I helped design experiments that capture those dynamics in naturalistic settings like concerts.
+At the neural level my interest is in how distributed auditory, frontal and limbic systems interact to make music both memorable and meaningful: auditory cortex and associative networks encode structure and familiarity, prefrontal circuits support rehearsal and retrieval, and limbic/reward pathways (including dopaminergic hubs) tag musical moments with emotion and motivational salience. This architecture explains why music often survives massive memory loss and why it can trigger vivid autobiographical recall, strong mood shifts, and social bonding; it also points to clear clinical opportunities — using personally meaningful music as a probe of preserved cognition, a tool for differential diagnosis, and a low-cost, person-centred route to rehabilitation and emotional care.</p>
+
+
+<p>I’m a musician who went into neuroscience because I wanted to understand why music lights up the mind. That curiosity became the backbone of the Rihanna project: I investigated how musical memory — which recruits distributed cortical networks — can remain remarkably preserved in neurodegenerative conditions where hippocampus-dependent autobiographical memory fails. My goal was practical and clinical: to test whether the mechanisms supporting musical memory differ from those behind other memory disturbances, and whether those differences can help distinguish, for example, Alzheimer’s disease from late-life depression so that care can be better targeted.
+I’ve also explored how emotional appraisal, familiarity and liking shape what we remember from music. I studied musical frisson and collective musical experiences to see how shared emotional moments map onto memory and behaviour, and I helped design experiments that capture those dynamics in naturalistic settings like concerts. In short: my work sits at the interface of music, emotion and memory — using musical experience as a lens to reveal preserved cognition, dissociable mechanisms of memory impairment, and possible pathways for diagnosis and rehabilitation.</p>
+
+
+<p>I started from being a musician: the question “why does music light up our minds?” drove me into neuroscience because it offered a quantitative, testable way to study cognition. That curiosity became the backbone of the Rihanna project, where I explored how musical memory — processed by distributed cortical networks — can remain remarkably preserved in neurodegenerative diseases (unlike hippocampus-dependent autobiographical memory). A practical goal was clinical: to understand whether music-based mechanisms could help distinguish Alzheimer’s from depression in older adults, and more broadly to probe residual cognition in states like coma.
+My work focused on the fact that musical stimuli are not neutral — familiarity, liking and emotional valence modulate memory and physiological responses. I ran experiments on musical frisson, and helped coordinate an ambitious multimodal recording (EEG synchronized with cardiac and electrodermal measures) on a cohort recorded during a live conductors’ competition. Because I’m a trained classical musician, I contributed to stimulus selection, protocol design and the operational logistics (many hands-on sessions, simultaneous participant management), not just as support but as an informed designer of the paradigm.
+Technically, I built bespoke signal-processing tools and analysis scripts when existing pipelines didn’t fit the questions; I performed preprocessing tests, feature explorations and pragmatic adaptations of methods to noisy, real-world recordings. Although some outputs were led by collaborators (e.g., Thibault’s project), my role spanned design, acquisition and processing, and it’s a thread that followed me into my postdoc: combining musical intuition, experimental rigor and EEG signal-engineering to push clinically relevant questions about memory and emotion.</p>
+
   </section>
 
   <section id="theme3" class="research-theme-card">
@@ -89,16 +84,9 @@ permalink: /research
       <img src="/images/site_icons/machine_learning.PNG" alt="Icon 3" class="theme-icon">
       <h4>Machine Learning for EEG</h4>
     </div>
-    <p>Diagnostic challenges are frequent in medicine, particularly in neurology and psychiatry, where clinicians often lack physiological biomarkers to characterize certain diseases (e.g., depression, coma, neurodegenerative conditions), especially in early stages.</p>
-    <p>Electroencephalography (EEG) has become increasingly common for exploring these pathologies. Brain activity can be recorded non-invasively, and analyzing these signals allows us to map brain regions and temporal dynamics triggered by specific stimuli. However, EEG analysis remains complex due to multiple noise sources (background activity, eye movements, artifacts) and high inter-individual variability.</p>
-    <p>In conventional studies, these issues are mitigated by averaging a large number of trials across participants, allowing random activity to cancel out while relevant signals emerge. This approach is not easily transferable to clinical practice, where diagnosis often needs to be performed on a single patient, highlighting the need for more robust methods to overcome unfavorable signal-to-noise ratios.</p>
-    <p>Recent advances in machine learning and reverse-correlation methods applied to EEG offer the ability to distinguish neural events that are otherwise barely detectable using traditional analyses. These techniques open the possibility of moving from group-level statistical findings to individualized diagnostic results, potentially transforming clinical neurophysiology.</p>
-    <p>Across my research, I have pursued two main goals:
-        <ul>
-          <li>To develop novel ways of extracting meaningful information from electrophysiological data.</li>
-          <li>To improve or propose new diagnostic and prognostic protocols for neuropsychiatric disorders.</li>
-      </ul>
-    </p>
+    <p>I began using machine learning on EEG within the Impresario context, a long-term effort that paired new sensing hardware (including work on photonic reservoir computing and nano-optic sensors) with algorithmic advances. I saw ML as the natural way to extract weak, high-level cognitive signals that traditional averaging misses and to move EEG from group-level science toward individualized, clinically useful diagnostics. I learned fast and mostly by doing: a steep self-training curve in programming and ML was required to turn the ambition of the project into a functional pipeline early in my PhD.</p>
+    <p>On the technical side I worked across the whole stack. I hand-designed and tested many features, then benchmarked classical supervised classifiers (k-NN, SVM-style approaches), unsupervised methods (hierarchical clustering), and reservoir approaches such as echo-state networks — later extending into photonic reservoir computing when hardware allowed. I also experimented with deep learning on raw traces but kept a critical eye on opacity: I paired modelling with explainable-AI methods (reverse-correlation / probing) so I could check what the models actually relied on and potentially discover interpretable biomarkers. Practically, I scripted end-to-end pipelines (MATLAB and Python), ran benchmarks, and learned how to port and document steps for reproducibility and deployment.</p>
+    <p>That work gave me a pragmatic, sceptical stance: EEG is low-SNR and full of electrical and biological artifacts, so sloppy ML produces beautiful but useless results. To counter that I led a large literature synthesis and produced methodology guidelines addressing common pitfalls; I’ve published and advocated for clear documentation, careful benchmarking, and explainability. My focus now is on combining rigorous preprocessing, sensible feature choices, explainable models and reproducible pipelines so EEG+ML can move from trendy claims to reliable clinical tools.</p>
   </section>
 
   <section id="theme4" class="research-theme-card">
@@ -106,22 +94,10 @@ permalink: /research
       <img src="/images/site_icons/brain_consciousness.png" alt="Icon 4" class="theme-icon">
       <h4>Disorders of Consciousness</h4>
     </div>
-    <p>These studies address diagnosis of pathological states of consciousness, where patients lose the ability to interact with their environment. Determining residual consciousness is crucial for clinical decision-making and ethical considerations around life-sustaining treatment. The absence of behavioral responses cannot be considered absolute proof of lack of comprehension or intention to communicate. We therefore explore direct neural markers of cognitive processing to establish reliable prognostic tools.</p>
-    <p>Cognitive event-related potentials (ERPs) from EEG, such as N100, MMN, P300, and N400, are particularly suited to evaluate residual brain capacities to process simple or complex stimuli.</p>
-    <h5>Pre-semantic Processing (Completed Study)</h5>
-    <p>The N400 component is a negative ERP peaking ~400 ms after a stimulus onset, typically recorded in centro-parietal areas, and is sensitive to the semantic congruence of auditory input. Observation of an N400 effect indicates access to meaning, a capacity correlated with better outcomes in patients with altered consciousness.</p>
-    <p>We used a paradigm with 120 word quartets: the first three words set a semantic context, the fourth could be congruent or incongruent. Data were collected from 30 healthy subjects and analyzed both traditionally and using SVM classifiers, with feature optimization via genetic algorithms.</p>
-    <p>Results showed:
-      <ul>
-        <li>Clear N400 effects in response to semantic violations.</li>
-        <li>Genetic algorithm optimization coupled with SVM drastically improved classification performance.</li>
-        <li>However, test accuracy did not scale accordingly, suggesting possible overfitting due to low signal-to-noise ratios in EEG data.</li>
-      </ul>
-    </p>
-    <h5>Reaction to the Patient’s Own Name (Ongoing Study)</h5>
-    <p>The P300 component is elicited when attention is drawn to rare, significant stimuli—such as hearing one’s own name. In an “oddball paradigm,” frequent beeps are mixed with occasional recordings of the subject's name. In patients with altered consciousness, a P300 response to their own name can correlate with better recovery prognosis.</p>
-    <p>In typical clinical practice, name recordings are made ad hoc, often in uncontrolled acoustic conditions, potentially affecting stimulus quality. Our study investigates whether latency, amplitude, and detectability of P300 responses are influenced by acoustic and prosodic characteristics of the spoken name.</p>
-    <p>We record EEG responses in healthy subjects (data collection complete) and patients (ongoing), using multiple acoustic variations of the same name. With reverse-correlation analysis, we aim to uncover prosodic patterns that enhance neural detectability, potentially guiding the design of optimized auditory stimuli for clinical assessments.</p>
+    <p>I encountered disorders of consciousness during my PhD because a rich, under-exploited clinical dataset was available and a machine-learning collaboration with a mathematics lab gave me the tools to interrogate it. I worked with an N400 semantic paradigm — moving from simple auditory detection (can the brain hear the beep?) to discrimination and finally to semantic integration — to ask whether residual language processing could be detected in patients who otherwise appear unconscious. That methodological thread pulled me into coma work: if hidden cognitive responses exist, careful paradigms and the right analyses can reveal them.</p>
+<p>I did this work at the bedside as well as in the lab. I accompanied clinicians to hospitals, ran EEG recordings on patients in intensive care, and learned the practical and human realities of working with critically ill people: consent is fraught, family decisions matter, and every interaction can affect interpretation. One concrete project was optimizing a patient’s own-name stimulus using synthesis and reverse-correlation to maximize elicited brain responses — a directly usable tool developed in close collaboration with neurologists at GHU Paris and Cochin. That translational, clinician-driven focus meant the outputs had to be implementable immediately, not just elegant on paper.</p>
+<p>Methodologically I’m uncompromising: I’ve seen inflated accuracies and poor reproducibility in the literature, and I refuse to sell seductive but clinically useless claims to physicians. My priority is pragmatic, ethically responsible tools — clear metrics (sensitivity/specificity), documented pipelines, and interfaces that fit hospital workflows. At Sophysa I extended this mindset into neuro-monitoring for critical care: build what clinicians can use, validate what matters for prognosis, and always keep the patient-level stakes front and center.</p>
+</p>
   </section>
 
   <section id="theme5" class="research-theme-card">
@@ -129,9 +105,10 @@ permalink: /research
       <img src="/images/site_icons/autism.PNG" alt="Icon 5" class="theme-icon">
       <h4>Vocal Smiles & Autism</h4>
     </div>
-    <p>Autism spectrum disorder (ASD) affects ~1 in 150 individuals worldwide (~600,000 in France) and is characterized by major difficulties in social communication. One of the most recurrent early signs is the absence of social smiling.</p>
-    <p>A smile changes the acoustic structure of speech by stretching vocal formants. "Smiling voices" automatically trigger unconscious facial mimicry in typical listeners. Our project examines how neutral versus smiling voices are processed along the perception-action chain in autistic and neurotypical individuals—from sensory encoding, to emotional perception, to motor imitation (assessed via EEG and facial EMG).</p>
-    <p>This research aims to disentangle the sensory-perceptual vs. emotional contributions to social communication challenges in ASD, providing mechanistic insights that may inspire future evidence-based interventions for children and adults on the spectrum.</p>
+    <p>I joined the project as part of a post-doc line linked to the ANR Sepia collaboration with the Autism Centre in Tours (Marie Gomot). My role was not to run patients in the clinic but to build and validate the stimulus bank and the behavioural protocol that the clinic would later use. I asked a simple question: why do autistic people struggle with socio-emotional signals such as the vocal smile — is it a specific emotion-processing deficit, a general sensory-encoding issue, a mix of both, or something else? To answer that we framed the problem along three steps: perception (can the signal be detected?), representation (what does a “smiling voice” look like in sensory space?) and action (what social response does it trigger, e.g. mimicry).</p>
+<p>Concretely, I designed a reverse-correlation paradigm using vocoids (e.g. /a/, a nasal vowel, and variants across the vowel triangle) and generated hundreds of spectral variants for each phoneme. Participants judged which exemplar sounded more smiling; from those choices we reconstructed the auditory features that define a “vocal smile” in typical listeners and measured the internal noise that modulates this perception. We tested effects of speaker and listener sex (male/female voices and male/female listeners) to characterise how representations vary across those dimensions, and the result was a validated stimulus set ready to be deployed with autistic participants.</p>
+<p>I also led the practical side: I recorded base phonemes (my voice and a colleague’s), selected short validated scales for alexithymia, autism traits and empathy suitable for online testing, wrote the protocol, handled IRB and recruitment logistics, supervised an intern, and implemented an online deployment in partnership with INSEAD using a tokenized server to restrict access. We collected ~200 participants in the validation sample — a substantial scale for this kind of stimuli work — and my contribution combined thematic mobility (shifting from production to socio-emotional perception) with project and data-collection management so the clinical arm could focus on autistic participants with solid, pretested stimuli.</p>
+</p>
   </section>
 
   <section id="theme6" class="research-theme-card">
@@ -139,9 +116,10 @@ permalink: /research
       <img src="/images/site_icons/industry.png" alt="Icon 6" class="theme-icon">
       <h4>Science & Industry</h4>
     </div>
-    <p>At Sophysa, I worked at the interface of clinical practice and R&D to guide the development of neurosurgical and neuromonitoring technologies, with a particular focus on traumatic brain injury (TBI) and intracranial pressure (ICP) monitoring.</p>
-    <p>I collaborated with clinicians and Key Opinion Leaders to translate user needs and clinical feedback into product specifications, and contributed to the design and evaluation of data analysis algorithms for continuous ICP and autoregulation monitoring.</p>
-    <p>My role included assessing emerging concepts for feasibility in real-world settings, overseeing clinical communication and documentation, conducting technology and literature watch, and initiating collaborative research projects with academic and clinical partners, ensuring that product innovation remained grounded in evidence-based practice.</p>
+    <p>At Sophysa I worked at the intersection of clinical practice and R&D as an Innovation Product Manager: my mission was to translate real clinical needs into viable neuro-monitoring products. I focused particularly on intracranial pressure measurement in traumatic brain injury, running the line between physicians who described problems and engineers who could propose solutions. I was the person who turned clinical anecdotes into concrete project proposals and asked the uncomfortable questions early — is this technically feasible, is it legally allowable, and can it realistically make money?</p>
+<p>My day-to-day was brutally pragmatic: user research with doctors and nurses, iterative prototyping, repeated user tests, and constant dialogue with regulatory, R&D and finance. I wrote the conviction dossiers that went to the executive committee, estimated costs and market potential, and flagged technical or regulatory blockers. I also kept environmental and usability trade-offs on the table (reusable module + single-use interface, sterility constraints, scarce components), because “nice idea” without practicable design or supply-chain thinking is useless — and expensive.</p>
+<p>What mattered most was deployment, not prestige. I insisted that designs fit existing clinical workflows, be interpretable by physicians under pressure, and be deployable in diverse contexts (big hospitals, field settings, low-resource regions). I refused to oversell performance or hide methodological weaknesses: when lives and budgets are at stake, transparency and clinical relevance beat sexy demos. In short — I bridged science and industry to deliver things clinicians can actually use, and I accepted the responsibility that comes with that.</p>
+</p>
   </section>
 
 </section>

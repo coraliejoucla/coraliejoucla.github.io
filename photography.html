@@ -25,14 +25,21 @@ permalink: /photography
       {% endfor %}
     </select>
   </div>
+
+  {% assign captions = site.data.photo_series_captions %}
   <div id="photo-grid" class="photo-grid">
     {% for file in site.static_files %}
       {% if file.path contains '/images/photos/' %}
         {% assign serie = file.path | split: '/images/photos/' | last | split: '/' | first %}
         {% assign id = file.path | slugify %}
-        <a href="#{{ id }}" data-series="{{ serie }}">
+        {% assign caption = captions[serie] %}
+
+        <!-- vignette cliquable -->
+        <a href="#{{ id }}" data-series="{{ serie }}" data-caption="{{ caption | escape }}">
           <img src="{{ file.path | remove: site.source }}" alt="{{ file.name }}">
         </a>
+
+        <!-- lightbox (pas d’overlay ici) -->
         <a href="#_" class="lightbox" id="{{ id }}">
           <img src="{{ file.path | remove: site.source }}" alt="{{ file.name }}">
         </a>

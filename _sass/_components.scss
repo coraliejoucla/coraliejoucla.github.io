@@ -38,41 +38,6 @@
   &:hover { color: deepskyblue; }
 }
 
-.research-card,
-.featured-card {
-  background: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 115, 153, 0.2); /*color change*/
-  transition: transform 0.2s ease;
-  text-decoration: none;
-  color: inherit;
-  &:hover { transform: translateY(-5px); }
-}
-
-.research-card img,
-.featured-card img {
-  max-height: 60px;
-  margin: 0 auto 1rem;
-  display: block;
-}
-
-.photo-grid a:not(.lightbox) img {
-  width: 100%;
-  height: auto;
-  display: block;
-  break-inside: avoid;
-  transition: transform 0.2s ease;
-  /*padding: 0;*/
-  margin: 0.5rem; /*space bexteen photos in a column*/
-}
-
-.photo-grid a:not(.lightbox) img:hover {
-  transform: scale(1.05);
-}
-
-
 .pub-title { font-size: 1rem; margin: 0.5rem 0; }
 .pub-meta { font-size: 0.8rem; color: #777; margin-top: 0.8rem; }
 
@@ -231,6 +196,7 @@ img.zoom-img {
 .zoom-overlay-transitioning {
   cursor: default;
 }
+
 /*
 .share-buttons {
   list-style: none;
@@ -239,6 +205,101 @@ img.zoom-img {
   a.twitter { color: #0084b4; }
 }*/
 
+/* research page */
+.research-card,
+.featured-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 115, 153, 0.2); /*color change*/
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  &:hover { transform: translateY(-5px); }
+}
+
+.research-card img,
+.featured-card img {
+  max-height: 60px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+
+/* photography page */
+
+/* the clickable wrapper — single owner of rounding/clip */
+.photo-grid a:not(.lightbox) {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;       /* clip image & overlay */
+  border-radius: 12px;    /* single source for rounding */
+  margin: 0.3rem;
+  vertical-align: top !important;
+}
+
+/* the image itself — must fill the wrapper exactly */
+.photo-grid a:not(.lightbox) img {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+  margin: 0;
+  padding: 0;
+
+  vertical-align: top !important;    /* avoids baseline whitespace artifacts */
+  object-fit: cover;                  /* ensures the image fills the box if CSS size applied */
+  -webkit-transform: translateZ(0);   /* keep image on its own layer too */
+}
+
+/* zoom on hover */
+.photo-grid a:not(.lightbox):hover img {
+  transform: scale(1.10);
+  transition: .5s ease;
+}
+
+
+/* overlay (kept minimal) */
+.photo-grid a:not(.lightbox)::after {
+  content: attr(data-caption);
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: .6rem .9rem;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.60) !important;
+  color: #fff !important;
+  border-bottom-left-radius: inherit !important;
+  border-bottom-right-radius: inherit !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  line-height: 1.35 !important;
+  font-size: .95rem !important;
+  z-index: 3 !important;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .18s ease, transform .18s ease;
+  pointer-events: none;
+}
+.photo-grid a:not(.lightbox):hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* hide lightbox anchors in the grid (they only show when :target) */
+.photo-grid a.lightbox { display: none !important; }
+.photo-grid a.lightbox:target { display:flex !important; justify-content:center; align-items:center; }
+
+/* mobile: keep overlay visible */
+@media (hover: none) and (pointer: coarse) {
+  .photo-grid a:not(.lightbox)::after { opacity: 1; transform: none; }
+}
+
+
+
+
+/* ----------------- */
 .lightbox {
   display: none;
   position: fixed;
@@ -261,8 +322,7 @@ img.zoom-img {
   display: flex;
 }
 
-
-/*outreach section*/
+/* ----------------- outreach section ------------------- */
 .events-section {
   padding: 2rem 0;
 }
