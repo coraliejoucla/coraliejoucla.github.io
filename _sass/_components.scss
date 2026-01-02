@@ -636,3 +636,105 @@ details {
 }
 
 
+/* ----------------- music page ------------------- */
+.music-filters { margin-bottom: 1.25rem; }
+.music-filter{
+  display:inline-block;
+  border: 1px solid rgba(0,0,0,.12);
+  background:#fff;
+  padding: .45rem .8rem;
+  margin: .25rem .25rem;
+  border-radius: 999px;
+  font-size: .78rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.music-filter.is-active{
+  border-color: rgba(0,115,153,.35);
+  box-shadow: 0 2px 8px rgba(0,115,153,.18);
+}
+
+.music-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  align-items: start;
+}
+@media (max-width: 900px){
+  .music-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px){
+  .music-grid{ grid-template-columns: 1fr; }
+}
+
+.music-card{
+  background:#fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,115,153,.18);
+  overflow:hidden;
+}
+
+.music-thumb{
+  position: relative;
+  display:block;
+  width:100%;
+  padding:0;
+  border:0;
+  background:transparent;
+  cursor:pointer;
+}
+.music-thumb img{
+  display:block;
+  width:100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.music-play{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 2.2rem;
+  color:#fff;
+  background: rgba(0,0,0,.25);
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+.music-thumb:hover .music-play{ opacity: 1; }
+
+.music-meta{ padding: .85rem .95rem 1rem; }
+.music-title{ margin:0 0 .3rem; font-size: 1.02rem; }
+.music-sub{ font-size:.82rem; color:#666; display:flex; gap:.6rem; flex-wrap:wrap; }
+
+/* Modal */
+.music-modal[aria-hidden="true"]{ display:none; }
+.music-modal{
+  position:fixed;
+  inset:0;
+  z-index: 2000;
+}
+.music-modal-backdrop{
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.80);
+}
+.music-modal-panel{
+  position: relative;
+  width: min(920px, 92vw);
+  margin: 6vh auto;
+  background:#fff;
+  border-radius: 14px;
+  padding: 1rem 1rem 1.25rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,.35);
+}
+.music-modal-close{
+  position:absolute;
+  top:.6rem;
+  right:.7rem;
+  border:0;
+  background:transparent;
+  font-size: 1.2rem;
+  cursor:pointer;
+}
+.music-modal-caption{ margin-top:.2rem; color:#666; }

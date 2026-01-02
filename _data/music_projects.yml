@@ -1,0 +1,19 @@
+- title: "Spectacle — Le Petit Prince"
+  year: 2025
+  tags: ["symphonique", "cinématographique"]
+  cover: "/music/covers/arbre.jpg"
+  type: "video"
+  sources:
+    - mp4: "/music/video/poudlard.mp4"
+      #webm: "/music/video/petit_prince_01.webm"
+  caption: "Arrangement / direction / production"
+
+- title: "Extrait — Orchestre universitaire"
+  year: 2023
+  tags: ["symphonique"]
+  cover: "/music/covers/dune.jpg"
+  type: "audio"
+  sources:
+    - mp3: "/music/audio/pizza.mp3"
+      #ogg: "/music/audio/extrait_orchestre_01.ogg"
+  caption: "Clarinet / arrangement"

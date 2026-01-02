@@ -1,0 +1,148 @@
+---
+title: Music
+layout: default
+permalink: /music
+---
+
+<h2 class="text-center mb-2">Music</h2>
+
+<div class="container-fluid">
+
+  <!-- Filters -->
+  {% assign items = site.data.music_projects %}
+  {% assign tags_string = "" %}
+  {% for it in items %}
+    {% for t in it.tags %}
+      {% assign tags_string = tags_string | append: t | append: "," %}
+    {% endfor %}
+  {% endfor %}
+  {% assign tags = tags_string | split: "," | uniq | sort %}
+
+  <div class="music-filters text-center mb-2">
+    <button class="music-filter is-active" data-filter="all">All</button>
+    {% for t in tags %}
+      {% if t != "" %}
+        <button class="music-filter" data-filter="{{ t }}">{{ t | upcase }}</button>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Grid -->
+  <div class="music-grid" id="music-grid">
+    {% for it in items %}
+      {% assign tags_joined = it.tags | join: " " %}
+      <article class="music-card" data-tags="{{ tags_joined | escape }}">
+        <button class="music-thumb"
+                type="button"
+                data-title="{{ it.title | escape }}"
+                data-year="{{ it.year }}"
+                data-type="{{ it.type }}"
+                data-caption="{{ it.caption | escape }}"
+                {% if it.type == "video" %}
+                  data-mp4="{{ it.sources[0].mp4 }}"
+                  data-webm="{{ it.sources[0].webm }}"
+                {% else %}
+                  data-mp3="{{ it.sources[0].mp3 }}"
+                  data-ogg="{{ it.sources[0].ogg }}"
+                {% endif %}
+        >
+          <img src="{{ it.cover }}" alt="{{ it.title | escape }}">
+          <span class="music-play">▶</span>
+        </button>
+
+        <div class="music-meta">
+          <h4 class="music-title">{{ it.title }}</h4>
+          <div class="music-sub">
+            <span class="music-year">{{ it.year }}</span>
+            <span class="music-tags">{{ it.tags | join: " · " }}</span>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="music-modal" id="music-modal" aria-hidden="true">
+  <div class="music-modal-backdrop" data-close></div>
+  <div class="music-modal-panel" role="dialog" aria-modal="true" aria-label="Media player">
+    <button class="music-modal-close" type="button" data-close aria-label="Close">✕</button>
+
+    <h3 id="mm-title"></h3>
+    <p class="music-modal-caption" id="mm-caption"></p>
+
+    <div id="mm-player"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  // Filter logic (similar spirit to your photography filtering)
+  const buttons = document.querySelectorAll('.music-filter');
+  const cards = document.querySelectorAll('.music-card');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+
+      const f = btn.dataset.filter;
+      cards.forEach(card => {
+        const tags = card.dataset.tags || "";
+        card.style.display = (f === "all" || tags.split(" ").includes(f)) ? "" : "none";
+      });
+    });
+  });
+
+  // Modal player
+  const modal = document.getElementById('music-modal');
+  const mmTitle = document.getElementById('mm-title');
+  const mmCaption = document.getElementById('mm-caption');
+  const mmPlayer = document.getElementById('mm-player');
+
+  function closeModal() {
+    modal.setAttribute('aria-hidden', 'true');
+    // stop playback by removing element
+    mmPlayer.innerHTML = "";
+  }
+
+  document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  document.querySelectorAll('.music-thumb').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const title = btn.dataset.title || "";
+      const year = btn.dataset.year || "";
+      const type = btn.dataset.type || "";
+      const caption = btn.dataset.caption || "";
+
+      mmTitle.textContent = year ? `${title} (${year})` : title;
+      mmCaption.textContent = caption;
+
+      if (type === "video") {
+        const mp4 = btn.dataset.mp4;
+        const webm = btn.dataset.webm;
+        mmPlayer.innerHTML = `
+          <video controls preload="metadata" style="width:100%; max-height:70vh;" poster="">
+            ${webm ? `<source src="${webm}" type="video/webm">` : ""}
+            ${mp4 ? `<source src="${mp4}" type="video/mp4">` : ""}
+            Your browser does not support the video tag.
+          </video>
+        `;
+      } else {
+        const mp3 = btn.dataset.mp3;
+        const ogg = btn.dataset.ogg;
+        mmPlayer.innerHTML = `
+          <audio controls preload="metadata" style="width:100%;">
+            ${ogg ? `<source src="${ogg}" type="audio/ogg">` : ""}
+            ${mp3 ? `<source src="${mp3}" type="audio/mpeg">` : ""}
+            Your browser does not support the audio element.
+          </audio>
+        `;
+      }
+
+      modal.setAttribute('aria-hidden', 'false');
+    });
+  });
+})();
+</script>
