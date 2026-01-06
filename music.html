@@ -6,10 +6,106 @@ permalink: /music
 
 <h2 class="text-center mb-2">Music</h2>
 
+<!--Blog events section-->
+<section class="events-section">
+  <div class="container-fluid">
+      <div class="event-card">
+        <h4 class="event-title">Core skills</h4>
+        <img class="event-media" src="/images/music/flute.jpg" alt="Coralie playing the flute" style="width:400px">
+
+
+        <!--<div class="resume-entry">-->
+          <!-- <h4>Music</h4> -->
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square-o"></i>Began playing the transverse flute at the age of 7, 3rd cycle diploma from the French Music Confederation in 2016</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Then continued in Pierre-Simon Chevry's class from 2018 to 2022</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Also plays the piccolo</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Started violin classes in 2024, 1st cycle</li>
+          </ul>
+        <!--</div>-->
+
+        <!--<div class="event-text">
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+        </div>-->
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------- -->
+
+      <div class="event-card">
+        <h4 class="event-title">Orchestra experience</h4>
+        <img class="event-media" src="/images/music/orchestre.jpg" alt="Coralie in orchestra" style="width:400px">
+
+
+        <div class="resume-entry">
+          <!-- <h4>Music</h4> -->
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square-o"></i>Etupes wind orchestra, 5 years</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Delle wind orchestra, 1 year</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Besançon University symphonic orchestra, 8 years</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Besançon University big band, 4 years</li>
+          </ul>
+        </div>
+
+        <!--<div class="event-text">
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+        </div>-->
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------- -->
+
+      <div class="event-card">
+        <h4 class="event-title">Arrangements</h4>
+        <img class="event-media" src="/images/music/orchestre.jpg" alt="Coralie in orchestra" style="width:400px">
+
+
+        <div class="resume-entry">
+          <!-- <h4>Music</h4> -->
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square-o"></i>Video games concert</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Big</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Big band</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Green Lemon</li>
+          </ul>
+        </div>
+
+        <!--<div class="event-text">
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+        </div>-->
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------- -->
+
+      <div class="event-card">
+        <h4 class="event-title">Project Marflu</h4>
+        <img class="event-media" src="/images/music/orchestre.jpg" alt="Coralie in orchestra" style="width:400px">
+
+        <!--
+        <div class="resume-entry">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square-o"></i>Video games concert</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Big</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Big band</li>
+            <li><i class="fa-li fa fa-check-square-o"></i>Green Lemon</li>
+          </ul>
+        </div>-->
+        <div class="event-text">
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+
 <div class="container-fluid">
 
   <!-- Filters -->
-  {% assign items = site.data.music_projects %}
+  <!--{% assign items = site.data.music_projects %}
   {% assign tags_string = "" %}
   {% for it in items %}
     {% for t in it.tags %}
@@ -25,7 +121,7 @@ permalink: /music
         <button class="music-filter" data-filter="{{ t }}">{{ t | upcase }}</button>
       {% endif %}
     {% endfor %}
-  </div>
+  </div> -->
 
   <!-- Grid -->
   <div class="music-grid" id="music-grid">
@@ -77,7 +173,7 @@ permalink: /music
 
 <script>
 (function() {
-  // Filter logic (similar spirit to your photography filtering)
+  // Filter logic
   const buttons = document.querySelectorAll('.music-filter');
   const cards = document.querySelectorAll('.music-card');
 
@@ -146,3 +242,5 @@ permalink: /music
   });
 })();
 </script>
+
+

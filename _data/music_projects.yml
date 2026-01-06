@@ -1,14 +1,54 @@
-- title: "Spectacle — Le Petit Prince"
+- title: "Project Marflu — Charanga Salada"
   year: 2025
-  tags: ["symphonique", "cinématographique"]
-  cover: "/music/covers/arbre.jpg"
+  tags: ["project marflu"]
+  cover: "/music/covers/marflu.png"
   type: "video"
   sources:
-    - mp4: "/music/video/poudlard.mp4"
+    - mp4: "/music/video/charanga_light.mp4"
       #webm: "/music/video/petit_prince_01.webm"
-  caption: "Arrangement / direction / production"
+  caption: "Présentation morceau"
 
-- title: "Extrait — Orchestre universitaire"
+- title: "Project Marflu — Fantasia Pastorale Ungherese"
+  year: 2025
+  tags: ["project marflu"]
+  cover: "/music/covers/marflu.png"
+  type: "audio"
+  sources:
+    - mp3: "/music/audio/pizza.mp3"
+      #ogg: "/music/audio/extrait_orchestre_01.ogg"
+  caption: "Présentation morceau"
+
+- title: "Symphonic orchestra — Gris"
+  year: 2024
+  tags: ["symphonic"]
+  cover: "/music/covers/gris.jpg"
+  type: "video"
+  sources:
+    - mp4: "/music/video/gris.mp3"
+      #ogg: "/music/audio/extrait_orchestre_01.ogg"
+  caption: "Clarinet / arrangement"
+
+- title: "Symphonic orchestra — World of Warcraft"
+  year: 2024
+  tags: ["symphonic"]
+  cover: "/music/covers/wow4.png"
+  type: "audio"
+  sources:
+    - mp3: "/music/audio/pizza.mp3"
+      #ogg: "/music/audio/extrait_orchestre_01.ogg"
+  caption: "Clarinet / arrangement"
+
+- title: "Placeholder"
+  year: 2023
+  tags: ["symphonique"]
+  cover: "/music/covers/dune.jpg"
+  type: "audio"
+  sources:
+    - mp3: "/music/audio/pizza.mp3"
+      #ogg: "/music/audio/extrait_orchestre_01.ogg"
+  caption: "Clarinet / arrangement"
+
+- title: "Placeholder"
   year: 2023
   tags: ["symphonique"]
   cover: "/music/covers/dune.jpg"

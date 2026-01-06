@@ -6,6 +6,12 @@ permalink: /photography
 
 <h2 class="text-center mb-2">Photography</h2>
 <div class="container-fluid">
+  <p>As a passionate photographer, I love telling stories through images.
+My work explores both travel and the stage, with a particular focus on light and emotions.
+I have covered Broadway-style shows and musicals for several years, and was given an exhibition to showcase my work on my trip to the United States.</p>
+  <p></p>
+
+  <!-- Filters photo -->
   <div class="text-center mb-2">
     <label for="series-select">Filter by series:</label>
     <select id="series-select">
@@ -25,6 +31,26 @@ permalink: /photography
       {% endfor %}
     </select>
   </div>
+
+  <!-- Filters music-->
+  <!--{% assign items = site.data.photo_series_captions %}
+  {% assign tags_string = "" %}
+  {% for it in items %}
+    {% for t in it.tags %}
+      {% assign tags_string = tags_string | append: t | append: "," %}
+    {% endfor %}
+  {% endfor %}
+  {% assign tags = tags_string | split: "," | uniq | sort %}
+
+  <div class="music-filters text-center mb-2">
+    <button class="music-filter is-active" data-filter="all">All</button>
+    {% for t in tags %}
+      {% if t != "" %}
+        <button class="music-filter" data-filter="{{ t }}">{{ t | upcase }}</button>
+      {% endif %}
+    {% endfor %}
+  </div>-->
+
 
   {% assign captions = site.data.photo_series_captions %}
   <div id="photo-grid" class="photo-grid">
