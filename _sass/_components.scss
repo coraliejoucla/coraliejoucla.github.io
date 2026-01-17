@@ -37,8 +37,6 @@ $accent-blue: rgb(0,115,153);
 
 /* ----------------- bio page ----------------------------------------------- */
 
-
-
 .hero-header {
   position: relative;
   width: 100%;
@@ -79,6 +77,10 @@ $accent-blue: rgb(0,115,153);
 
 .pub-title { font-size: 1rem; margin: 0.5rem 0; }
 .pub-meta { font-size: 0.8rem; color: #777; margin-top: 0.8rem; }
+.pub-badges {margin-top: .5rem; margin-bottom: .8rem}
+.pub-ref {margin-bottom: 0rem;}
+
+
 
 .icon-inline { display: inline-block; height: 20px; position: relative; top: 0.2rem; }
 .icon-inline-lg { display: inline-block; height: 25px; position: relative; top: 0.2rem; }
@@ -682,8 +684,7 @@ img.zoom-img {
 }
 
 html { scroll-behavior: smooth; }
-#core_skills, #orchestra, #arrangements, #management, #portfolio { scroll-margin-top: 90px; }
-
+#theme1, #theme2, #theme3, #theme4, #theme5, #theme6, #core_skills, #orchestra, #arrangements, #management, #portfolio, #experience, #science-skills, #transversal-skills, #education, #languages, #teaching, #grants, #hobbies { scroll-margin-top: 90px; }
 
 .music-grid{
   display: grid;

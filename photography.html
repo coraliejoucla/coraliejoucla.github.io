@@ -6,12 +6,12 @@ permalink: /photography
 
 <h2 class="text-center mb-2">Photography</h2>
 <div class="container-fluid">
-  <p>As a passionate photographer, I love telling stories through images.
+  <p class="text-center mb-2">As a passionate photographer, I love telling stories through images.
 My work explores both travel and the stage, with a particular focus on light and emotions.
 I have covered Broadway-style shows and musicals for several years, and was given an exhibition to showcase my work on my trip to the United States.</p>
 
   <!-- Filters photo -->
-  <div class="text-center mb-2">
+  <!--<div class="text-center mb-2">
     <label for="series-select">Filter by series:</label>
     <select id="series-select">
       <option value="all">All</option>
@@ -29,7 +29,7 @@ I have covered Broadway-style shows and musicals for several years, and was give
         {% endif %}
       {% endfor %}
     </select>
-  </div>
+  </div>-->
 
   <!-- Filters music-->
   <!--{% assign items = site.data.photo_series_captions %}
@@ -49,6 +49,25 @@ I have covered Broadway-style shows and musicals for several years, and was give
       {% endif %}
     {% endfor %}
   </div>-->
+
+  <div class="music-filters text-center mb-2" id="series-filters">
+    <button class="music-filter is-active" type="button" data-series="all">All</button>
+
+    {% assign series_string = "" %}
+    {% for file in site.static_files %}
+      {% if file.path contains '/images/photos/' %}
+        {% assign serie = file.path | split: '/images/photos/' | last | split: '/' | first %}
+        {% assign series_string = series_string | append: serie | append: ',' %}
+      {% endif %}
+    {% endfor %}
+    {% assign series_list = series_string | split: ',' | uniq | sort %}
+    {% for serie in series_list %}
+      {% if serie != '' %}
+        <button class="music-filter" type="button" data-series="{{ serie }}">{{ serie }}</button>
+      {% endif %}
+    {% endfor %}
+  </div>
+
 
 
   {% assign captions = site.data.photo_series_captions %}
@@ -73,7 +92,7 @@ I have covered Broadway-style shows and musicals for several years, and was give
   </div>
 </div>
 
-<script>
+<!--<script>
 const select = document.getElementById('series-select');
 select.addEventListener('change', function() {
   // Close any open lightbox when switching series
@@ -85,4 +104,33 @@ select.addEventListener('change', function() {
     }
   });
 });
+</script>-->
+
+<script>
+(function () {
+  const filters = document.getElementById('series-filters');
+  const buttons = filters.querySelectorAll('button.music-filter');
+
+  function applyFilter(chosen) {
+    // Close any open lightbox when switching series
+    location.hash = '_';
+
+    document.querySelectorAll('#photo-grid a').forEach(link => {
+      if (!link.classList.contains('lightbox')) {
+        link.style.display = (chosen === 'all' || link.dataset.series === chosen)
+          ? 'inline-block'
+          : 'none';
+      }
+    });
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      applyFilter(btn.dataset.series);
+    });
+  });
+})();
 </script>
+
