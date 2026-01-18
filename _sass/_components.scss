@@ -48,6 +48,8 @@ $accent-blue: rgb(0,115,153);
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
+  transition: transform .5s ease; 
+
   img {
     width: 160px;
     height: 160px;
@@ -56,7 +58,12 @@ $accent-blue: rgb(0,115,153);
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   }
+
+  &:hover { 
+  transform: translateX(-50%) translateY(-10px);
+  }
 }
+
 
 .btn-primary {
   background-color: #FCDC58;

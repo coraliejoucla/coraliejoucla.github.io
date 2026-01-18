@@ -10,45 +10,6 @@ permalink: /photography
 My work explores both travel and the stage, with a particular focus on light and emotions.
 I have covered Broadway-style shows and musicals for several years, and was given an exhibition to showcase my work on my trip to the United States.</p>
 
-  <!-- Filters photo -->
-  <!--<div class="text-center mb-2">
-    <label for="series-select">Filter by series:</label>
-    <select id="series-select">
-      <option value="all">All</option>
-      {% assign series_string = "" %}
-      {% for file in site.static_files %}
-        {% if file.path contains '/images/photos/' %}
-          {% assign serie = file.path | split: '/images/photos/' | last | split: '/' | first %}
-          {% assign series_string = series_string | append: serie | append: ',' %}
-        {% endif %}
-      {% endfor %}
-      {% assign series_list = series_string | split: ',' | uniq | sort %}
-      {% for serie in series_list %}
-        {% if serie != '' %}
-        <option value="{{ serie }}">{{ serie }}</option>
-        {% endif %}
-      {% endfor %}
-    </select>
-  </div>-->
-
-  <!-- Filters music-->
-  <!--{% assign items = site.data.photo_series_captions %}
-  {% assign tags_string = "" %}
-  {% for it in items %}
-    {% for t in it.tags %}
-      {% assign tags_string = tags_string | append: t | append: "," %}
-    {% endfor %}
-  {% endfor %}
-  {% assign tags = tags_string | split: "," | uniq | sort %}
-
-  <div class="music-filters text-center mb-2">
-    <button class="music-filter is-active" data-filter="all">All</button>
-    {% for t in tags %}
-      {% if t != "" %}
-        <button class="music-filter" data-filter="{{ t }}">{{ t | upcase }}</button>
-      {% endif %}
-    {% endfor %}
-  </div>-->
 
   <div class="music-filters text-center mb-2" id="series-filters">
     <button class="music-filter is-active" type="button" data-series="all">All</button>
@@ -91,20 +52,6 @@ I have covered Broadway-style shows and musicals for several years, and was give
     {% endfor %}
   </div>
 </div>
-
-<!--<script>
-const select = document.getElementById('series-select');
-select.addEventListener('change', function() {
-  // Close any open lightbox when switching series
-  location.hash = '_';
-  const chosen = this.value;
-  document.querySelectorAll('#photo-grid a').forEach(link => {
-    if (!link.classList.contains('lightbox')) {
-      link.style.display = (chosen === 'all' || link.dataset.series === chosen) ? 'inline-block' : 'none';
-    }
-  });
-});
-</script>-->
 
 <script>
 (function () {
