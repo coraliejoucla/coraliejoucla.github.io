@@ -494,6 +494,33 @@ img.zoom-img {
   color: #223;
 }
 
+.event-card .title-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.event-card .theme-icon {
+  width: 40px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.event-card h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.event-card p {
+  margin: 0 0 8px 0;
+  text-align: justify;
+  color: #444;
+  line-height: 1.5;
+}
+
 
 .event-media{
   float: right;

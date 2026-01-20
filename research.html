@@ -42,79 +42,98 @@ permalink: /research
 
 
 <!-- Detailed Sections -->
-  <section id="theme1" class="research-theme-card">
+<section class="events-section">
+  <section id="theme1" class="event-card">
     <div class="title-line">
       <img src="/images/site_icons/eeg.png" alt="Icon 1" class="theme-icon">
       <h4>EEG Signal Analysis</h4>
     </div>
-    <p>Diagnostic challenges are common in medicine, particularly in neurology and psychiatry, where doctors often lack physiological biomarkers to characterize specific diseases (e.g., depression, coma, neurodegenerative syndromes), especially in their early stages.</p>
-    <p>I started working with EEG during my master’s program because of its clinical applicability: it allows me to work with both healthy people and patients (Alzheimer's, coma...) without the constraints of fMRI or invasive recordings, and its millisecond temporal precision allows me to investigate time-sensitive processes. </p>
-    <p>Throughout my research, I have pursued two key goals:
-        <ul>
-          <li>To design innovative techniques for extracting meaningful information from electrophysiological data,</li>
-          <li>To enhance or build new diagnostic and prognostic protocols for neuropsychiatric disorders.</li>
-      </ul>
-    </p>
-    <p>On a technical level I was thoroughly trained across the whole workflow: from manual preprocessing and visual inspection with GUI tools to fully automated, reproducible pipelines. I learned MATLAB and Python by myself and coded plugins and algorithms that turned expert, time-consuming tasks into automated routines.</p>
-    <p>Today my strengths are at the crossroads of neuroscience and signal processing: I tailor pipelines based on experiment protocol and patient type, port tools towards Python with an open-science mindset, and integrate individualized analyses and machine-learning methods for clinically meaningful results. My strategy is based on logic and practicality: first, selecting approaches based on the specific questions requiring answers, followed by examinig data through hands-on techniques, and finally, building automation and replicability suitable for actual clinical application.</p>
+    <img class="event-media" src="/images/research/eeg_2021.jpg" alt="EEG net" style="width:400px">
+
+    <div class="event-text">
+      <p>Diagnostic challenges are common in medicine, particularly in neurology and psychiatry, where doctors often lack physiological biomarkers to characterize specific diseases (e.g., depression, coma, neurodegenerative syndromes), especially in their early stages.</p>
+      <p>I started working with EEG during my master’s program because of its clinical applicability: it allows me to work with both healthy people and patients (Alzheimer's, coma...) without the constraints of fMRI or invasive recordings, and its millisecond temporal precision allows me to investigate time-sensitive processes. </p>
+      <p>Throughout my research, I have pursued two key goals:
+          <ul>
+            <li>To design innovative techniques for extracting meaningful information from electrophysiological data,</li>
+            <li>To enhance or build new diagnostic and prognostic protocols for neuropsychiatric disorders.</li>
+        </ul>
+      </p>
+      <p>On a technical level I was thoroughly trained across the whole workflow: from manual preprocessing and visual inspection with GUI tools to fully automated, reproducible pipelines. I learned MATLAB and Python by myself and coded plugins and algorithms that turned expert, time-consuming tasks into automated routines.</p>
+      <p>Today my strengths are at the crossroads of neuroscience and signal processing: I tailor pipelines based on experiment protocol and patient type, port tools towards Python with an open-science mindset, and integrate individualized analyses and machine-learning methods for clinically meaningful results. My strategy is based on logic and practicality: first, selecting approaches based on the specific questions requiring answers, followed by examinig data through hands-on techniques, and finally, building automation and replicability suitable for actual clinical application.</p>
+    </div>
   </section>
 
-  <section id="theme2" class="research-theme-card">
+  <section id="theme2" class="event-card">
     <div class="title-line">
       <img src="/images/site_icons/music.png" alt="Icon 2" class="theme-icon">
       <h4>Music, Memory & Emotion</h4>
     </div>
-    <p>I started from being a musician, and the question “why does music light up our minds?” is what drove me into neuroscience. This led me to the Rihanna project, the first I worked on, where we explored how musical memory, which recruits distributed cortical networks, can remain remarkably preserved in neurodegenerative conditions where hippocampus-dependent autobiographical memory fails. The primary goal was clinical: to understand whether music-based mechanisms could help distinguish Alzheimer’s from depression in older adults, so that care could be better targeted.
-    My work focused on the fact that musical stimuli are not neutral: emotional valence, familiarity and liking shape what we remember from music, and physiological responses.</p>
+    <img class="event-media" src="/images/research/music.PNG" alt="Music experiment" style="width:300px">
 
-    <p>I collaborated on experiments on musical frisson, and helped coordinate an ambitious multimodal recording (EEG synchronized with cardiac and electrodermal measures) on a cohort recorded during a live conductors’ competition. Because I’m a trained classical musician, I contributed to stimulus selection, protocol design and the operational logistics (many hands-on sessions, simultaneous participant management).</p>
+    <div class="event-text">
+      <p>I started from being a musician, and the question “why does music light up our minds?” is what drove me into neuroscience. This led me to the Rihanna project, the first I worked on, where we explored how musical memory, which recruits distributed cortical networks, can remain remarkably preserved in neurodegenerative conditions where hippocampus-dependent autobiographical memory fails. The primary goal was clinical: to understand whether music-based mechanisms could help distinguish Alzheimer’s from depression in older adults, so that care could be better targeted.
+      My work focused on the fact that musical stimuli are not neutral: emotional valence, familiarity and liking shape what we remember from music, and physiological responses.</p>
 
+      <p>I collaborated on experiments on musical frisson, and helped coordinate an ambitious multimodal recording (EEG synchronized with cardiac and electrodermal measures) on a cohort recorded during a live conductors’ competition. Because I’m a trained classical musician, I contributed to stimulus selection, protocol design and the operational logistics (many hands-on sessions, simultaneous participant management).</p>
+   </div>
   </section>
 
-  <section id="theme3" class="research-theme-card">
+  <section id="theme3" class="event-card">
     <div class="title-line">
       <img src="/images/site_icons/machine_learning.PNG" alt="Icon 3" class="theme-icon">
       <h4>Machine Learning for EEG</h4>
     </div>
-    <p>I started using machine learning on EEG at the beginning of my PhD, which was part of a broader project that paired the neuroscience and the optics labs. The idea was to design new sensing hardware (including work on photonic reservoir computing and nano-optic sensors) for EEG, with algorithmic advances for exploration of brain functions. I saw ML as the natural way to extract weak, high-level cognitive signals that traditional averaging misses and to move EEG from group-level fundamental science toward individualized, clinically useful diagnostics. I had to overcome a challenging self-training curve in programming and machine learning in order to transform the project's ambition into a working pipeline early in my PhD. I learned fast and primarily by doing.</p>
-    <p>From a technical perspective, I worked across the entire ecosystem. I hand-designed and tested many features, then benchmarked classical supervised classifiers (RNN, k-NN, SVM-style approaches), unsupervised methods (hierarchical clustering), and reservoir approaches such as Echo-State Networks. During post-doc, I integrated interpretability techniques (specifically, reverse correlation and model probing) alongside the modeling process, enabling me to scrutinize the actual basis of model predictions and uncover meaningful biomarkers. I scripted end-to-end pipelines (MATLAB and Python), ran benchmarks, and learned how to port and document steps for reproducibility and deployment.</p>
-    <p>That work gave me a pragmatic, sceptical stance: EEG is low-SNR and full of electrical and biological artifacts, so sloppy ML can generate impressive-looking but useless results. To counter that I led a large literature analysis and provided methodology guidelines addressing common pitfalls. I’ve published and advocated for clear documentation, careful benchmarking, and explainability. My focus now is on combining rigorous preprocessing, sensible feature choices, explainable models and reproducible pipelines so EEG+ML can move from trendy claims to reliable clinical tools.</p>
+
+    <div class="event-text">
+      <p>I started using machine learning on EEG at the beginning of my PhD, which was part of a broader project that paired the neuroscience and the optics labs. The idea was to design new sensing hardware (including work on photonic reservoir computing and nano-optic sensors) for EEG, with algorithmic advances for exploration of brain functions. I saw ML as the natural way to extract weak, high-level cognitive signals that traditional averaging misses and to move EEG from group-level fundamental science toward individualized, clinically useful diagnostics. I had to overcome a challenging self-training curve in programming and machine learning in order to transform the project's ambition into a working pipeline early in my PhD. I learned fast and primarily by doing.</p>
+      <p>From a technical perspective, I worked across the entire ecosystem. I hand-designed and tested many features, then benchmarked classical supervised classifiers (RNN, k-NN, SVM-style approaches), unsupervised methods (hierarchical clustering), and reservoir approaches such as Echo-State Networks. During post-doc, I integrated interpretability techniques (specifically, reverse correlation and model probing) alongside the modeling process, enabling me to scrutinize the actual basis of model predictions and uncover meaningful biomarkers. I scripted end-to-end pipelines (MATLAB and Python), ran benchmarks, and learned how to port and document steps for reproducibility and deployment.</p>
+      <p>That work gave me a pragmatic, sceptical stance: EEG is low-SNR and full of electrical and biological artifacts, so sloppy ML can generate impressive-looking but useless results. To counter that I led a large literature analysis and provided methodology guidelines addressing common pitfalls. I’ve published and advocated for clear documentation, careful benchmarking, and explainability. My focus now is on combining rigorous preprocessing, sensible feature choices, explainable models and reproducible pipelines so EEG+ML can move from trendy claims to reliable clinical tools.</p>
+    </div>
   </section>
 
-  <section id="theme4" class="research-theme-card">
+  <section id="theme4" class="event-card">
     <div class="title-line">
       <img src="/images/site_icons/brain_consciousness.png" alt="Icon 4" class="theme-icon">
       <h4>Disorders of Consciousness</h4>
     </div>
-    <p> Disorders of consciousness have been a common thread throughout my career. I started my PhD by working on a clinical dataset of EEG recordings comprising potentials evoked by an N400 paradigm. Conscious subjects and patients in anoxic comas were presented with sets of four words, the first three belonging to the same lexical field to provide semantic context, and the last one either congruent or incongruent with that context, in order to see if the subject had the cognitive ability to understand the meaning of the words. </p>
-    <p> This research spanned both the controlled laboratory setting and direct patient interaction at the bedside. I joined clinical teams in hospital environments, conducting EEG recordings on those in intensive care units, gaining firsthand knowledge of the practical and emotional dimensions of treating severely ill individuals: securing consent is complex, familial input is crucial, and every action taken influences data interpretation. </p>
-    <p> During my post-doc, I continued working on this same topic in collaboration with neurologists from GHU Paris and Cochin Hospital. This time, it was a classic “own-name” paradigm, which involves examining the presence, latency, and amplitude of the P300 evoked by hearing one's own name. The goal here was to optimize a patient's own-name stimulus using synthesis and reverse-correlation to maximize elicited brain responses, for a tool that could be implemented immediately in a clinical setting. </p>
-    <p> I continued to focus on this topic during my time in industry, where I was involved in developing clinical innovations for collecting and processing data on intensive care patients, specifically regarding intracranial pressure and temperature (ICP/ICT). </p>
 
+    <div class="event-text">
+      <p> Disorders of consciousness have been a common thread throughout my career. I started my PhD by working on a clinical dataset of EEG recordings comprising potentials evoked by an N400 paradigm. Conscious subjects and patients in anoxic comas were presented with sets of four words, the first three belonging to the same lexical field to provide semantic context, and the last one either congruent or incongruent with that context, in order to see if the subject had the cognitive ability to understand the meaning of the words. </p>
+      <p> This research spanned both the controlled laboratory setting and direct patient interaction at the bedside. I joined clinical teams in hospital environments, conducting EEG recordings on those in intensive care units, gaining firsthand knowledge of the practical and emotional dimensions of treating severely ill individuals: securing consent is complex, familial input is crucial, and every action taken influences data interpretation. </p>
+      <p> During my post-doc, I continued working on this same topic in collaboration with neurologists from GHU Paris and Cochin Hospital. This time, it was a classic “own-name” paradigm, which involves examining the presence, latency, and amplitude of the P300 evoked by hearing one's own name. The goal here was to optimize a patient's own-name stimulus using synthesis and reverse-correlation to maximize elicited brain responses, for a tool that could be implemented immediately in a clinical setting. </p>
+      <p> I continued to focus on this topic during my time in industry, where I was involved in developing clinical innovations for collecting and processing data on intensive care patients, specifically regarding intracranial pressure and temperature (ICP/ICT). </p>
+    </div>
   </section>
 
-  <section id="theme5" class="research-theme-card">
+  <section id="theme5" class="event-card">
     <div class="title-line">
       <img src="/images/site_icons/autism.PNG" alt="Icon 5" class="theme-icon">
       <h4>Vocal Smiles & Autism</h4>
     </div>
-    <p>I joined the project as part of a post-doctoral fellowship tied to the ANR Sepia partnership with the Autisme Center located in Tours (under Marie Gomot’s direction). My responsibility was to create and validate the stimulus and the behavioral protocol that the clinic would later use. We started with a fundamental inquiry: what underlies the difficulties experienced by autistic individuals when processing socio-emotional cues, for instance, the vocal manifestation of a smile? Does this stem from a difficulty specifically in emotion processing, a broader issue in how sensory information is encoded, a combination of the two, or perhaps another factor entirely? To address this, we framed the problem along three distinct phases: perception (can the signal be detected?), representation (what does a “smiling voice” look like in sensory space?) and action (what social response does it trigger, e.g. mimicry).</p>
-    
-    <p>Specifically, I designed a reverse-correlation paradigm using vocoids (e.g. /a/, a nasal vowel, and others spanning the vowel space) and generated hundreds of spectral variants for each phoneme. Participants’ task was to choose between pairs of variants which one had a more noticeable "smiling" quality. Based on their responses, we reconstructed the auditory features that define a « vocal smile » in typical listeners, and measured the internal noise that affects this perception. We tested effects of speaker and listener sex (male/female voices and male/female listeners) to understand how representations vary across those dimensions, and the outcome was a validated stimulus set ready for use with autistic subjects later on.</p>
 
-    <p>Regarding the hands-on execution, I drafted the research procedure, oversaw all necessary ethical approval (IRB) and recruitment logistics, recorded base phonemes (my voice and a JJ’s), chose short validated scales for empathy, autism traits, and alexithymia suitable for online testing, supervised an intern, and implemented an online deployment in partnership with INSEAD using a tokenized server to restrict access. We successfully enrolled more than 200 individuals for the validation cohort, a significant undertaking for the development of such auditory materials.</p>
-    </p>
+    <img class="event-media" src="/images/research/vocal_smile.PNG" alt="Vocal smile experiment" style="width:400px">
+
+    <div class="event-text">
+      <p>I joined the project as part of a post-doctoral fellowship tied to the ANR Sepia partnership with the Autisme Center located in Tours (under Marie Gomot’s direction). My responsibility was to create and validate the stimulus and the behavioral protocol that the clinic would later use. We started with a fundamental inquiry: what underlies the difficulties experienced by autistic individuals when processing socio-emotional cues, for instance, the vocal manifestation of a smile? Does this stem from a difficulty specifically in emotion processing, a broader issue in how sensory information is encoded, a combination of the two, or perhaps another factor entirely? To address this, we framed the problem along three distinct phases: perception (can the signal be detected?), representation (what does a “smiling voice” look like in sensory space?) and action (what social response does it trigger, e.g. mimicry).</p>
+      
+      <p>Specifically, I designed a reverse-correlation paradigm using vocoids (e.g. /a/, a nasal vowel, and others spanning the vowel space) and generated hundreds of spectral variants for each phoneme. Participants’ task was to choose between pairs of variants which one had a more noticeable "smiling" quality. Based on their responses, we reconstructed the auditory features that define a « vocal smile » in typical listeners, and measured the internal noise that affects this perception. We tested effects of speaker and listener sex (male/female voices and male/female listeners) to understand how representations vary across those dimensions, and the outcome was a validated stimulus set ready for use with autistic subjects later on.</p>
+
+      <p>Regarding the hands-on execution, I drafted the research procedure, oversaw all necessary ethical approval (IRB) and recruitment logistics, recorded base phonemes (my voice and a JJ’s), chose short validated scales for empathy, autism traits, and alexithymia suitable for online testing, supervised an intern, and implemented an online deployment in partnership with INSEAD using a tokenized server to restrict access. We successfully enrolled more than 200 individuals for the validation cohort, a significant undertaking for the development of such auditory materials.</p>
+    </div>
   </section>
 
-  <section id="theme6" class="research-theme-card">
+  <section id="theme6" class="event-card">
     <div class="title-line">
       <img src="/images/site_icons/industry.png" alt="Icon 6" class="theme-icon">
       <h4>Science & Industry</h4>
     </div>
-    <p>At Sophysa I worked at the intersection of clinical practice and R&D as an Innovation Product Manager: my mission was to translate real clinical needs into viable neuro-monitoring products. I focused particularly on intracranial pressure measurement in traumatic brain injury, running the line between physicians who described problems and engineers who could propose solutions. I was the person who turned clinical anecdotes into concrete project proposals and asked the uncomfortable questions early — is this technically feasible, is it legally allowable, and can it realistically make money?</p>
-<p>My day-to-day was brutally pragmatic: user research with doctors and nurses, iterative prototyping, repeated user tests, and constant dialogue with regulatory, R&D and finance. I wrote the conviction dossiers that went to the executive committee, estimated costs and market potential, and flagged technical or regulatory blockers. I also kept environmental and usability trade-offs on the table (reusable module + single-use interface, sterility constraints, scarce components), because “nice idea” without practicable design or supply-chain thinking is useless — and expensive.</p>
-<p>What mattered most was deployment, not prestige. I insisted that designs fit existing clinical workflows, be interpretable by physicians under pressure, and be deployable in diverse contexts (big hospitals, field settings, low-resource regions). I refused to oversell performance or hide methodological weaknesses: when lives and budgets are at stake, transparency and clinical relevance beat sexy demos. In short — I bridged science and industry to deliver things clinicians can actually use, and I accepted the responsibility that comes with that.</p>
-</p>
-  </section>
 
+    <div class="event-text">
+      <p>At Sophysa I worked at the intersection of clinical practice and R&D as an Innovation Product Manager: my mission was to translate real clinical needs into viable neuro-monitoring products. I focused particularly on intracranial pressure measurement in traumatic brain injury, running the line between physicians who described problems and engineers who could propose solutions. I was the person who turned clinical anecdotes into concrete project proposals and asked the uncomfortable questions early — is this technically feasible, is it legally allowable, and can it realistically make money?</p>
+      <p>My day-to-day was brutally pragmatic: user research with doctors and nurses, iterative prototyping, repeated user tests, and constant dialogue with regulatory, R&D and finance. I wrote the conviction dossiers that went to the executive committee, estimated costs and market potential, and flagged technical or regulatory blockers. I also kept environmental and usability trade-offs on the table (reusable module + single-use interface, sterility constraints, scarce components), because “nice idea” without practicable design or supply-chain thinking is useless — and expensive.</p>
+      <p>What mattered most was deployment, not prestige. I insisted that designs fit existing clinical workflows, be interpretable by physicians under pressure, and be deployable in diverse contexts (big hospitals, field settings, low-resource regions). I refused to oversell performance or hide methodological weaknesses: when lives and budgets are at stake, transparency and clinical relevance beat sexy demos. In short — I bridged science and industry to deliver things clinicians can actually use, and I accepted the responsibility that comes with that.</p>
+    </div>
+  </section>
+  </section>
 </section>
