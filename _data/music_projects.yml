@@ -6,8 +6,8 @@
   sources:
     - mp4: "/music/video/charanga_light.mp4"
       #webm: "/music/video/petit_prince_01.webm"
-  caption: "A duet originally written for marimba and flute by Sergueï Golovko, dedicated to two Italian musicians, 
-  inspired by charanga — traditional Cuban dance ensembles — and reflecting rhythmic influences from Cuban music traditions."
+  caption: "A duet written for marimba and flute by Sergueï Golovko, dedicated to two Italian musicians, 
+  inspired by charanga (traditional Cuban dance ensembles) and reflecting rhythmic influences from Cuban music traditions."
 
 - title: "Project Marflu — Fantasia Pastorale Ungherese"
   year: 2025
@@ -24,44 +24,51 @@
   year: 2024
   #tags: ["symphonic"]
   cover: "/music/covers/gris.jpg"
-  type: "audio"
+  #type: "audio"
+  #sources:
+    #- mp3: "/music/audio/Gris_Maquette_son_orig_finale.mp3"
+  type: "video"
   sources:
-    - mp3: "/music/audio/Gris_Maquette_son_orig_finale.mp3"
-      #ogg: "/music/audio/extrait_orchestre_01.ogg"
+    - mp4: "/music/video/Gris_video.mp4"
   caption: "From the video game Gris, a visually evocative story of a young woman navigating her inner world after a painful experience, 
   where the soundtrack by Berlinist supports the game’s emotional journey and watercolor-inspired art style."
 
 - title: "Symphonic orchestra — World of Warcraft"
   year: 2024
   cover: "/music/covers/wow5.jpg"
-  type: "audio"
+  #type: "audio"
+  #sources:
+    #- mp3: "/music/audio/Warcraft_Maquette_son_orig_finale.mp3"
+  type: "video"
   sources:
-    - mp3: "/music/audio/Warcraft_Maquette_son_orig_finale.mp3"
+    - mp4: "/music/video/WoW_site.mp4"
   caption: |
-    A compilation of major epic themes from the World of Warcraft soundtrack,
-    originally composed for one of the most successful and long-running MMORPG universes.
+    A compilation of major epic themes from the World of Warcraft soundtrack, from one of the most successful and long-running MMORPG universes. Full video on request.
 
-    Extracts from:
-    Main title — World of Warcraft
-    Legends of Azeroth — Classic
-    Freehold Battle Music — Battle for Azeroth
-    Kingdoms will burn — Legion
-    A Siege of Worlds — Warlords of Draenor
-    Heart of Pandaria — Mists of Pandaria
-    The Shattering — Cataclysm
+    <span class="caption-extracts">
+    Extracts from:<br>
+    Main title — World of Warcraft<br>
+    Legends of Azeroth — Classic<br>
+    Freehold Battle Music — Battle for Azeroth<br>
+    Kingdoms will burn — Legion<br>
+    A Siege of Worlds — Warlords of Draenor<br>
+    Heart of Pandaria — Mists of Pandaria<br>
+    The Shattering — Cataclysm<br>
     Main title — Wrath of the Lich King
-
+    </span>
 
 - title: "Wind quintet — Good riddance (from Hades)"
   year: 2023
   #tags: ["symphonique"]
   cover: "/music/covers/hades2.png"
-  type: "audio"
+  #type: "audio"
+  #sources:
+  #  - mp3: "/music/audio/Hades_vst.mp3"
+  type: "video"
   sources:
-    - mp3: "/music/audio/Hades_vst.mp3"
-      #ogg: "/music/audio/extrait_orchestre_01.ogg"
-  caption: "Appearing in Supergiant Games’ Hades, this vocal track is sung in-game by the character Eurydice in Asphodel, 
-  reflecting her acceptance of her fate and adding a narrative layer to the Greek-myth-inspired story of love, loss and reunion."
+    - mp4: "/music/video/Hades_video_score.mp4"
+  caption: "Appearing in Supergiant Games’ Hades, this vocal track is sung in-game by Eurydice in Asphodel, 
+  reflecting her acceptance of her fate and adding an emotional layer to the Greek-myth-inspired story of love, loss and reunion."
 
 - title: "Mixed ensemble — Travelers (from Outer Wilds)"
   year: 2023
@@ -71,5 +78,5 @@
   sources:
     - mp3: "/music/audio/pizza.mp3"
       #ogg: "/music/audio/extrait_orchestre_01.ogg"
-  caption: "From Outer Wilds, a critically acclaimed exploration game about discovering the secrets of a solar system trapped in a time loop; 
-  its soundtrack is tied intrinsically to the game’s narrative theme of discovery and the personal stories of explorers."
+  caption: "From Outer Wilds, a critically acclaimed exploration game about discovering the secrets of a solar system trapped in a time loop.  
+  Its soundtrack is tied to the game’s narrative theme of discovery and the personal stories of explorers."

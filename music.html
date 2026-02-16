@@ -184,7 +184,8 @@ permalink: /music
       const caption = btn.dataset.caption || "";
 
       mmTitle.textContent = year ? `${title} (${year})` : title;
-      mmCaption.textContent = caption;
+      //mmCaption.textContent = caption;
+      mmCaption.innerHTML = caption;
 
       if (type === "video") {
         const mp4 = btn.dataset.mp4;

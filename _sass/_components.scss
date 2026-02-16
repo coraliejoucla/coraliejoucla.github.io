@@ -827,5 +827,13 @@ html { scroll-behavior: smooth; }
 .music-modal-caption{ 
   margin-top:.2rem; 
   color:#666;
-  white-space: pre-line;
+  white-space: normal;
 }
+
+.music-modal-caption .caption-extracts {
+  font-size: 0.70rem;
+  /*opacity: 0.75;*/
+  display: block;
+  margin-top: 0.75rem;
+}
+
